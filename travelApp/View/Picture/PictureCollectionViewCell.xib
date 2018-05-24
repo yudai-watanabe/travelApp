@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PictureCollectionViewCell" customModule="travelApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="226" height="290"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="226" height="290"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newyork" translatesAutoresizingMaskIntoConstraints="NO" id="TOu-Gi-nal" userLabel="image">
+                        <rect key="frame" x="16" y="0.0" width="210" height="290"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsv-hu-k3E" userLabel="title">
+                        <rect key="frame" x="30" y="258" width="103" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zsv-hu-k3E" secondAttribute="bottom" constant="14" id="EG9-Cc-Hr7"/>
+                <constraint firstItem="TOu-Gi-nal" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Ky9-sq-0xq"/>
+                <constraint firstAttribute="bottom" secondItem="TOu-Gi-nal" secondAttribute="bottom" id="MLE-2K-Pg4"/>
+                <constraint firstItem="TOu-Gi-nal" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Zo7-ag-i59"/>
+                <constraint firstItem="zsv-hu-k3E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="dNX-x6-7je"/>
+                <constraint firstAttribute="trailing" secondItem="TOu-Gi-nal" secondAttribute="trailing" id="mEP-ot-dsJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="429" height="514"/>
+            <connections>
+                <outlet property="image" destination="TOu-Gi-nal" id="gUS-XI-3wf"/>
+                <outlet property="title" destination="zsv-hu-k3E" id="WSo-dk-7Pf"/>
+            </connections>
+            <point key="canvasLocation" x="316.5" y="250"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="newyork" width="210" height="290"/>
+    </resources>
+</document>
