@@ -10,6 +10,12 @@ import UIKit
 
 class CategoryCollectionViewCell: UICollectionViewCell {
 
+    var cartegory: Category? {
+        didSet{
+            self.categoryTitle.text = cartegory?.tiltle
+        }
+    }
+    
     @IBOutlet weak var categoryTitle: UILabel!
 
 }

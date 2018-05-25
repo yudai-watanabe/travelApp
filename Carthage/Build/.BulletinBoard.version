@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.3.0",
+  "iOS" : [
+    {
+      "name" : "BulletinBoard",
+      "hash" : "12ced6669892e65307aafd31a2afe81fb5b894d1669f063198ca92a5ae550d30"
+    }
+  ]
+}

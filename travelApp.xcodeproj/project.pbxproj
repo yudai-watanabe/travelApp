@@ -31,6 +31,15 @@
 		377B3B6B20B6AE9F00BB50C0 /* MyPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B6A20B6AE9F00BB50C0 /* MyPageCoordinator.swift */; };
 		377B3B6E20B6B1D300BB50C0 /* UIViewController + Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B6D20B6B1D300BB50C0 /* UIViewController + Base.swift */; };
 		377B3B7020B6B2CC00BB50C0 /* NSObject + Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B6F20B6B2CC00BB50C0 /* NSObject + Base.swift */; };
+		377B3B7420B7A88B00BB50C0 /* IGListKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B7220B7A88B00BB50C0 /* IGListKit.framework */; };
+		377B3B7520B7A88B00BB50C0 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B7320B7A88B00BB50C0 /* Lottie.framework */; };
+		377B3B7A20B7A96900BB50C0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B7920B7A96900BB50C0 /* Category.swift */; };
+		377B3B7D20B7B0E600BB50C0 /* CategorySectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B7C20B7B0E600BB50C0 /* CategorySectionController.swift */; };
+		377B3B7F20B7E98F00BB50C0 /* PictureSectionCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B7E20B7E98F00BB50C0 /* PictureSectionCotroller.swift */; };
+		377B3B8320B7EEFE00BB50C0 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B8220B7EEFE00BB50C0 /* Picture.swift */; };
+		377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */; };
+		377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */; };
+		377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +90,15 @@
 		377B3B6A20B6AE9F00BB50C0 /* MyPageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageCoordinator.swift; sourceTree = "<group>"; };
 		377B3B6D20B6B1D300BB50C0 /* UIViewController + Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Base.swift"; sourceTree = "<group>"; };
 		377B3B6F20B6B2CC00BB50C0 /* NSObject + Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Base.swift"; sourceTree = "<group>"; };
+		377B3B7220B7A88B00BB50C0 /* IGListKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IGListKit.framework; path = Carthage/Build/iOS/IGListKit.framework; sourceTree = "<group>"; };
+		377B3B7320B7A88B00BB50C0 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
+		377B3B7920B7A96900BB50C0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		377B3B7C20B7B0E600BB50C0 /* CategorySectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySectionController.swift; sourceTree = "<group>"; };
+		377B3B7E20B7E98F00BB50C0 /* PictureSectionCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSectionCotroller.swift; sourceTree = "<group>"; };
+		377B3B8220B7EEFE00BB50C0 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletinBoard.framework; path = Carthage/Build/iOS/BulletinBoard.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +106,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */,
+				377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */,
+				377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */,
+				377B3B7420B7A88B00BB50C0 /* IGListKit.framework in Frameworks */,
+				377B3B7520B7A88B00BB50C0 /* Lottie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +138,7 @@
 				3753AD8020B56F5700612D6B /* travelAppTests */,
 				3753AD8B20B56F5700612D6B /* travelAppUITests */,
 				3753AD6A20B56F5400612D6B /* Products */,
+				377B3B7120B7A88B00BB50C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,9 +157,10 @@
 			children = (
 				3753AD6C20B56F5400612D6B /* AppDelegate.swift */,
 				377B3B6C20B6B0A700BB50C0 /* Extension */,
-				377B3B6020B6AA2400BB50C0 /* ApplicationCooridnator */,
+				377B3B7820B7A94600BB50C0 /* Entity */,
 				3753AD9A20B6920D00612D6B /* View */,
 				3753ADA620B6A26F00612D6B /* ViewController */,
+				377B3B7B20B7ACF500BB50C0 /* SectionController */,
 				3753AD6E20B56F5400612D6B /* ViewController.swift */,
 				3753AD7020B56F5400612D6B /* Main.storyboard */,
 				3753AD7320B56F5700612D6B /* Assets.xcassets */,
@@ -248,6 +273,37 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		377B3B7120B7A88B00BB50C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */,
+				377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */,
+				377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */,
+				377B3B7220B7A88B00BB50C0 /* IGListKit.framework */,
+				377B3B7320B7A88B00BB50C0 /* Lottie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		377B3B7820B7A94600BB50C0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				377B3B6020B6AA2400BB50C0 /* ApplicationCooridnator */,
+				377B3B7920B7A96900BB50C0 /* Category.swift */,
+				377B3B8220B7EEFE00BB50C0 /* Picture.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		377B3B7B20B7ACF500BB50C0 /* SectionController */ = {
+			isa = PBXGroup;
+			children = (
+				377B3B7C20B7B0E600BB50C0 /* CategorySectionController.swift */,
+				377B3B7E20B7E98F00BB50C0 /* PictureSectionCotroller.swift */,
+			);
+			path = SectionController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,6 +314,7 @@
 				3753AD6520B56F5400612D6B /* Sources */,
 				3753AD6620B56F5400612D6B /* Frameworks */,
 				3753AD6720B56F5400612D6B /* Resources */,
+				377B3B7620B7A8B500BB50C0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -379,12 +436,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		377B3B7620B7A8B500BB50C0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/IGListKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/carthage/Build/iOS/BulletinBoard.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3753AD6520B56F5400612D6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3753ADA820B6A40B00612D6B /* HomeViewController.swift in Sources */,
+				377B3B7D20B7B0E600BB50C0 /* CategorySectionController.swift in Sources */,
 				377B3B6B20B6AE9F00BB50C0 /* MyPageCoordinator.swift in Sources */,
 				3753AD6F20B56F5400612D6B /* ViewController.swift in Sources */,
 				377B3B5C20B6A8D400BB50C0 /* MyPageViewController.swift in Sources */,
@@ -392,10 +471,13 @@
 				377B3B6E20B6B1D300BB50C0 /* UIViewController + Base.swift in Sources */,
 				3753ADA320B69B3100612D6B /* PictureCollectionViewCell.swift in Sources */,
 				377B3B5820B6A85F00BB50C0 /* TripViewController.swift in Sources */,
+				377B3B7F20B7E98F00BB50C0 /* PictureSectionCotroller.swift in Sources */,
 				3753AD9D20B6927900612D6B /* CategoryCollectionViewCell.swift in Sources */,
 				377B3B6920B6AE8C00BB50C0 /* TripCoordinator.swift in Sources */,
 				3753AD6D20B56F5400612D6B /* AppDelegate.swift in Sources */,
+				377B3B7A20B7A96900BB50C0 /* Category.swift in Sources */,
 				377B3B6720B6AD4C00BB50C0 /* HomeCoordinator.swift in Sources */,
+				377B3B8320B7EEFE00BB50C0 /* Picture.swift in Sources */,
 				377B3B6220B6AA5000BB50C0 /* ApplicationCoordinator.swift in Sources */,
 				377B3B6420B6AA8F00BB50C0 /* Coordinator.swift in Sources */,
 			);
@@ -571,6 +653,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86YAB7ZF6J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = travelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,6 +675,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 86YAB7ZF6J;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = travelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
