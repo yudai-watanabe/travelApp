@@ -41,6 +41,10 @@
 		377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */; };
 		377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */; };
 		3788B27E20BB9733005D0637 /* UIImageView + cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B27D20BB9733005D0637 /* UIImageView + cornerRadius.swift */; };
+		3788B28220BBD82C005D0637 /* EmbeddedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28120BBD82C005D0637 /* EmbeddedCollectionViewCell.swift */; };
+		3788B28420BBF32B005D0637 /* EmbeddedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */; };
+		3788B28720BBF669005D0637 /* HorizontalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28620BBF669005D0637 /* HorizontalSectionController.swift */; };
+		3788B28920BC07C7005D0637 /* Pictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28820BC07C7005D0637 /* Pictures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,10 @@
 		377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletinBoard.framework; path = Carthage/Build/iOS/BulletinBoard.framework; sourceTree = "<group>"; };
 		3788B27D20BB9733005D0637 /* UIImageView + cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + cornerRadius.swift"; sourceTree = "<group>"; };
+		3788B28120BBD82C005D0637 /* EmbeddedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedCollectionViewCell.swift; sourceTree = "<group>"; };
+		3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedSectionController.swift; sourceTree = "<group>"; };
+		3788B28620BBF669005D0637 /* HorizontalSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSectionController.swift; sourceTree = "<group>"; };
+		3788B28820BC07C7005D0637 /* Pictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pictures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +201,7 @@
 		3753AD9A20B6920D00612D6B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3788B28020BBD691005D0637 /* Embedded */,
 				3753ADA020B69B1100612D6B /* Picture */,
 				3753AD9F20B69B0100612D6B /* Category */,
 			);
@@ -294,6 +303,7 @@
 				377B3B6020B6AA2400BB50C0 /* ApplicationCooridnator */,
 				377B3B7920B7A96900BB50C0 /* Category.swift */,
 				377B3B8220B7EEFE00BB50C0 /* Picture.swift */,
+				3788B28820BC07C7005D0637 /* Pictures.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -303,8 +313,18 @@
 			children = (
 				377B3B7C20B7B0E600BB50C0 /* CategorySectionController.swift */,
 				377B3B7E20B7E98F00BB50C0 /* PictureSectionCotroller.swift */,
+				3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */,
+				3788B28620BBF669005D0637 /* HorizontalSectionController.swift */,
 			);
 			path = SectionController;
+			sourceTree = "<group>";
+		};
+		3788B28020BBD691005D0637 /* Embedded */ = {
+			isa = PBXGroup;
+			children = (
+				3788B28120BBD82C005D0637 /* EmbeddedCollectionViewCell.swift */,
+			);
+			path = Embedded;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -470,17 +490,21 @@
 				377B3B6B20B6AE9F00BB50C0 /* MyPageCoordinator.swift in Sources */,
 				3753AD6F20B56F5400612D6B /* ViewController.swift in Sources */,
 				377B3B5C20B6A8D400BB50C0 /* MyPageViewController.swift in Sources */,
+				3788B28420BBF32B005D0637 /* EmbeddedSectionController.swift in Sources */,
 				377B3B7020B6B2CC00BB50C0 /* NSObject + Base.swift in Sources */,
 				377B3B6E20B6B1D300BB50C0 /* UIViewController + Base.swift in Sources */,
 				3753ADA320B69B3100612D6B /* PictureCollectionViewCell.swift in Sources */,
+				3788B28920BC07C7005D0637 /* Pictures.swift in Sources */,
 				377B3B5820B6A85F00BB50C0 /* TripViewController.swift in Sources */,
 				377B3B7F20B7E98F00BB50C0 /* PictureSectionCotroller.swift in Sources */,
 				3753AD9D20B6927900612D6B /* CategoryCollectionViewCell.swift in Sources */,
 				377B3B6920B6AE8C00BB50C0 /* TripCoordinator.swift in Sources */,
+				3788B28720BBF669005D0637 /* HorizontalSectionController.swift in Sources */,
 				3753AD6D20B56F5400612D6B /* AppDelegate.swift in Sources */,
 				377B3B7A20B7A96900BB50C0 /* Category.swift in Sources */,
 				377B3B6720B6AD4C00BB50C0 /* HomeCoordinator.swift in Sources */,
 				377B3B8320B7EEFE00BB50C0 /* Picture.swift in Sources */,
+				3788B28220BBD82C005D0637 /* EmbeddedCollectionViewCell.swift in Sources */,
 				377B3B6220B6AA5000BB50C0 /* ApplicationCoordinator.swift in Sources */,
 				3788B27E20BB9733005D0637 /* UIImageView + cornerRadius.swift in Sources */,
 				377B3B6420B6AA8F00BB50C0 /* Coordinator.swift in Sources */,
