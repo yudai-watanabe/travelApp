@@ -40,6 +40,7 @@
 		377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */; };
 		377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */; };
 		377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */; };
+		3788B27E20BB9733005D0637 /* UIImageView + cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B27D20BB9733005D0637 /* UIImageView + cornerRadius.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletinBoard.framework; path = Carthage/Build/iOS/BulletinBoard.framework; sourceTree = "<group>"; };
+		3788B27D20BB9733005D0637 /* UIImageView + cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + cornerRadius.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 			children = (
 				377B3B6D20B6B1D300BB50C0 /* UIViewController + Base.swift */,
 				377B3B6F20B6B2CC00BB50C0 /* NSObject + Base.swift */,
+				3788B27D20BB9733005D0637 /* UIImageView + cornerRadius.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -479,6 +482,7 @@
 				377B3B6720B6AD4C00BB50C0 /* HomeCoordinator.swift in Sources */,
 				377B3B8320B7EEFE00BB50C0 /* Picture.swift in Sources */,
 				377B3B6220B6AA5000BB50C0 /* ApplicationCoordinator.swift in Sources */,
+				3788B27E20BB9733005D0637 /* UIImageView + cornerRadius.swift in Sources */,
 				377B3B6420B6AA8F00BB50C0 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

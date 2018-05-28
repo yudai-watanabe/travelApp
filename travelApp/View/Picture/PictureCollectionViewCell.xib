@@ -25,6 +25,11 @@
                             <constraint firstAttribute="width" constant="210" id="i1R-E9-SFS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RaZ-Ge-hN0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsv-hu-k3E" userLabel="title">
                         <rect key="frame" x="30" y="311" width="103" height="18"/>
@@ -33,7 +38,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvp-Dz-jwf">
-                        <rect key="frame" x="187" y="40" width="23" height="22"/>
+                        <rect key="frame" x="187" y="30" width="23" height="22"/>
                         <state key="normal" image="haert"/>
                     </button>
                 </subviews>
@@ -43,7 +48,7 @@
                 <constraint firstItem="zsv-hu-k3E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="1ue-7j-lgm"/>
                 <constraint firstItem="TOu-Gi-nal" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Ky9-sq-0xq"/>
                 <constraint firstAttribute="bottom" secondItem="TOu-Gi-nal" secondAttribute="bottom" constant="16" id="MLE-2K-Pg4"/>
-                <constraint firstItem="rvp-Dz-jwf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="Puh-39-BFn"/>
+                <constraint firstItem="rvp-Dz-jwf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="Puh-39-BFn"/>
                 <constraint firstAttribute="trailing" secondItem="rvp-Dz-jwf" secondAttribute="trailing" constant="16" id="TrI-Y5-wha"/>
                 <constraint firstAttribute="bottom" secondItem="zsv-hu-k3E" secondAttribute="bottom" constant="30" id="XOk-xl-pst"/>
                 <constraint firstItem="TOu-Gi-nal" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="Zo7-ag-i59"/>
