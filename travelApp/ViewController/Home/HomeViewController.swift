@@ -58,10 +58,7 @@ extension HomeViewController: ListAdapterDataSource {
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         switch object {
-        case is Category:
-            let sectionController = CategorySectionController()
-            sectionController.category = object as? Category
-            return sectionController
+        case is Category: return CategorySectionController()
         case is Pictures: return HorizontalSectionController()
         default: fatalError()
         }

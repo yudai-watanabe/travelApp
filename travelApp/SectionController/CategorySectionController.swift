@@ -12,7 +12,7 @@ import IGListKit
 
 final class CategorySectionController: ListSectionController {
     
-    var category: Category?
+    private var category: Category?
     
     override func sizeForItem(at index: Int) -> CGSize {
         return CGSize(width: collectionContext!.containerSize.width, height: 64)
@@ -28,6 +28,10 @@ final class CategorySectionController: ListSectionController {
         cell.cartegory = category
         
         return cell
+    }
+    
+    override func didUpdate(to object: Any) {
+        self.category = object as? Category
     }
     
 }

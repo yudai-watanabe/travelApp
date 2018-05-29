@@ -21,6 +21,7 @@
 		3753ADA820B6A40B00612D6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753ADA720B6A40B00612D6B /* HomeViewController.swift */; };
 		3753ADAA20B6A43A00612D6B /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3753ADA920B6A43A00612D6B /* HomeViewController.storyboard */; };
 		377AD59520BD1BCF00C210F8 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59420BD1BCF00C210F8 /* like.json */; };
+		377AD59720BD23F300C210F8 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59620BD23F300C210F8 /* heart.json */; };
 		377B3B5820B6A85F00BB50C0 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B5720B6A85F00BB50C0 /* TripViewController.swift */; };
 		377B3B5A20B6A8B000BB50C0 /* TripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377B3B5920B6A8B000BB50C0 /* TripViewController.storyboard */; };
 		377B3B5C20B6A8D400BB50C0 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B5B20B6A8D400BB50C0 /* MyPageViewController.swift */; };
@@ -41,7 +42,7 @@
 		377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */; };
 		377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */; };
 		377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */; };
-		3788B27E20BB9733005D0637 /* UIImageView + cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B27D20BB9733005D0637 /* UIImageView + cornerRadius.swift */; };
+		3788B27E20BB9733005D0637 /* UIView + cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B27D20BB9733005D0637 /* UIView + cornerRadius.swift */; };
 		3788B28220BBD82C005D0637 /* EmbeddedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28120BBD82C005D0637 /* EmbeddedCollectionViewCell.swift */; };
 		3788B28420BBF32B005D0637 /* EmbeddedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */; };
 		3788B28720BBF669005D0637 /* HorizontalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28620BBF669005D0637 /* HorizontalSectionController.swift */; };
@@ -86,6 +87,7 @@
 		3753ADA720B6A40B00612D6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3753ADA920B6A43A00612D6B /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		377AD59420BD1BCF00C210F8 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
+		377AD59620BD23F300C210F8 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
 		377B3B5720B6A85F00BB50C0 /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		377B3B5920B6A8B000BB50C0 /* TripViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripViewController.storyboard; sourceTree = "<group>"; };
 		377B3B5B20B6A8D400BB50C0 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +108,7 @@
 		377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletinBoard.framework; path = Carthage/Build/iOS/BulletinBoard.framework; sourceTree = "<group>"; };
-		3788B27D20BB9733005D0637 /* UIImageView + cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + cornerRadius.swift"; sourceTree = "<group>"; };
+		3788B27D20BB9733005D0637 /* UIView + cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + cornerRadius.swift"; sourceTree = "<group>"; };
 		3788B28120BBD82C005D0637 /* EmbeddedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedCollectionViewCell.swift; sourceTree = "<group>"; };
 		3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedSectionController.swift; sourceTree = "<group>"; };
 		3788B28620BBF669005D0637 /* HorizontalSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSectionController.swift; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				377AD59420BD1BCF00C210F8 /* like.json */,
+				377AD59620BD23F300C210F8 /* heart.json */,
 			);
 			path = JSON;
 			sourceTree = "<group>";
@@ -292,7 +295,7 @@
 			children = (
 				377B3B6D20B6B1D300BB50C0 /* UIViewController + Base.swift */,
 				377B3B6F20B6B2CC00BB50C0 /* NSObject + Base.swift */,
-				3788B27D20BB9733005D0637 /* UIImageView + cornerRadius.swift */,
+				3788B27D20BB9733005D0637 /* UIView + cornerRadius.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				3753AD7420B56F5700612D6B /* Assets.xcassets in Resources */,
 				3753ADA420B69B3100612D6B /* PictureCollectionViewCell.xib in Resources */,
 				3753AD7220B56F5400612D6B /* Main.storyboard in Resources */,
+				377AD59720BD23F300C210F8 /* heart.json in Resources */,
 				377B3B5A20B6A8B000BB50C0 /* TripViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -518,7 +522,7 @@
 				377B3B8320B7EEFE00BB50C0 /* Picture.swift in Sources */,
 				3788B28220BBD82C005D0637 /* EmbeddedCollectionViewCell.swift in Sources */,
 				377B3B6220B6AA5000BB50C0 /* ApplicationCoordinator.swift in Sources */,
-				3788B27E20BB9733005D0637 /* UIImageView + cornerRadius.swift in Sources */,
+				3788B27E20BB9733005D0637 /* UIView + cornerRadius.swift in Sources */,
 				377B3B6420B6AA8F00BB50C0 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -692,8 +696,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 86YAB7ZF6J;
+				DEVELOPMENT_TEAM = MUCG9T2HC3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -705,6 +710,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.travelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -714,8 +721,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 86YAB7ZF6J;
+				DEVELOPMENT_TEAM = MUCG9T2HC3;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -727,6 +735,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.travelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -26,6 +26,13 @@ final class PictureSectionController: ListSectionController {
                                                                 fatalError("category is nil OR PictureCollectionViewCell has can`t founded")
         }
         cell.picture = picture
+        cell.layer.shadowColor = UIColor.darkGray.cgColor
+        cell.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        cell.layer.shadowOpacity = 2.0
+        cell.layer.shadowRadius = 10.0
+        cell.layer.masksToBounds = false
+        cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds,
+                                             cornerRadius: cell.layer.cornerRadius).cgPath
         return cell
     }
     

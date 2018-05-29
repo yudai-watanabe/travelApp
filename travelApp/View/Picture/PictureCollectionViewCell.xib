@@ -29,41 +29,38 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvp-Dz-jwf">
-                        <rect key="frame" x="173" y="14" width="23" height="22"/>
-                        <state key="normal" image="haert"/>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York City" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsv-hu-k3E" userLabel="title">
                         <rect key="frame" x="14" y="258" width="103" height="18"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Efy-oV-5MD" customClass="LOTAnimationView">
-                        <rect key="frame" x="159" y="55" width="30" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="aZL-aD-Nqg" customClass="LOTAnimationView">
+                        <rect key="frame" x="170" y="10" width="30" height="30"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" button="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="DMF-Jx-LWa"/>
+                            <constraint firstAttribute="width" constant="30" id="Yt5-w0-n5E"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="zsv-hu-k3E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="1ue-7j-lgm"/>
-                <constraint firstItem="rvp-Dz-jwf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="Puh-39-BFn"/>
-                <constraint firstAttribute="trailing" secondItem="rvp-Dz-jwf" secondAttribute="trailing" constant="14" id="TrI-Y5-wha"/>
+                <constraint firstAttribute="trailing" secondItem="aZL-aD-Nqg" secondAttribute="trailing" constant="10" id="Rw8-u9-YZN"/>
                 <constraint firstAttribute="bottom" secondItem="zsv-hu-k3E" secondAttribute="bottom" constant="14" id="XOk-xl-pst"/>
+                <constraint firstItem="aZL-aD-Nqg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="wQo-G7-jsB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="429" height="567"/>
             <connections>
-                <outlet property="animationView" destination="Efy-oV-5MD" id="gkp-PQ-513"/>
-                <outlet property="heartButton" destination="rvp-Dz-jwf" id="esg-hP-acb"/>
+                <outlet property="animationView" destination="aZL-aD-Nqg" id="Ag9-Cz-n5i"/>
                 <outlet property="image" destination="TOu-Gi-nal" id="gUS-XI-3wf"/>
                 <outlet property="title" destination="zsv-hu-k3E" id="WSo-dk-7Pf"/>
             </connections>
             <point key="canvasLocation" x="79" y="256"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="haert" width="23" height="20"/>
-    </resources>
 </document>

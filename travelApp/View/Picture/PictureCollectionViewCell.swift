@@ -12,25 +12,36 @@ import Alamofire
 import Lottie
 
 class PictureCollectionViewCell: UICollectionViewCell {
-
+    
     var picture: Picture? {
         didSet{
             self.title.text = picture?.title
-            self.image.af_setImage(withURL: URL(string: (picture?.imageUrl)!)!)
-            self.animationView.setAnimation(named: "like")
-            self.heartButton.addTarget(self, action:  #selector(tappedHeartButton(_:)), for: .touchUpInside)
+            self.image.af_setImage(withURL: URL(string: picture!.imageUrl)!)
         }
     }
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var heartButton: UIButton!
     @IBOutlet weak var animationView: LOTAnimationView!
     
-    @objc func tappedHeartButton(_ sender: UIButton) {
-        let animation = LOTAnimationView(name: "like")
-        animation.frame = CGRect(x: 0, y: 0, width: 23, height: 22)
-        self.heartButton.addSubview(animation)
-        animation.play()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.animationView.setAnimation(named: "like")
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tap))
+        self.animationView.addGestureRecognizer(tapGesture)
+        
+        self.layer.masksToBounds = false
+        
+        self.layer.shadowColor = UIColor.lightGray.cgColor
+        self.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+        self.layer.shadowOpacity = 2.0
+        self.layer.shadowRadius = 5.0
+        self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds,
+                                             cornerRadius: self.layer.cornerRadius).cgPath
+    }
+    
+    @objc func tap() {
+        animationView.play()
     }
 }
