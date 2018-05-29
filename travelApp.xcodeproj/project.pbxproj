@@ -20,6 +20,7 @@
 		3753ADA420B69B3100612D6B /* PictureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3753ADA220B69B3100612D6B /* PictureCollectionViewCell.xib */; };
 		3753ADA820B6A40B00612D6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753ADA720B6A40B00612D6B /* HomeViewController.swift */; };
 		3753ADAA20B6A43A00612D6B /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3753ADA920B6A43A00612D6B /* HomeViewController.storyboard */; };
+		377AD59520BD1BCF00C210F8 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59420BD1BCF00C210F8 /* like.json */; };
 		377B3B5820B6A85F00BB50C0 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B5720B6A85F00BB50C0 /* TripViewController.swift */; };
 		377B3B5A20B6A8B000BB50C0 /* TripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377B3B5920B6A8B000BB50C0 /* TripViewController.storyboard */; };
 		377B3B5C20B6A8D400BB50C0 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B5B20B6A8D400BB50C0 /* MyPageViewController.swift */; };
@@ -84,6 +85,7 @@
 		3753ADA220B69B3100612D6B /* PictureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCollectionViewCell.xib; sourceTree = "<group>"; };
 		3753ADA720B6A40B00612D6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3753ADA920B6A43A00612D6B /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		377AD59420BD1BCF00C210F8 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
 		377B3B5720B6A85F00BB50C0 /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		377B3B5920B6A8B000BB50C0 /* TripViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripViewController.storyboard; sourceTree = "<group>"; };
 		377B3B5B20B6A8D400BB50C0 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -165,8 +167,10 @@
 		3753AD6B20B56F5400612D6B /* travelApp */ = {
 			isa = PBXGroup;
 			children = (
+				377AD59320BD1BA300C210F8 /* JSON */,
 				3753AD6C20B56F5400612D6B /* AppDelegate.swift */,
 				377B3B6C20B6B0A700BB50C0 /* Extension */,
+				377B3B6020B6AA2400BB50C0 /* ApplicationCooridnator */,
 				377B3B7820B7A94600BB50C0 /* Entity */,
 				3753AD9A20B6920D00612D6B /* View */,
 				3753ADA620B6A26F00612D6B /* ViewController */,
@@ -245,6 +249,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		377AD59320BD1BA300C210F8 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				377AD59420BD1BCF00C210F8 /* like.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		377B3B5620B6A84D00BB50C0 /* Trip */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,7 +312,6 @@
 		377B3B7820B7A94600BB50C0 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				377B3B6020B6AA2400BB50C0 /* ApplicationCooridnator */,
 				377B3B7920B7A96900BB50C0 /* Category.swift */,
 				377B3B8220B7EEFE00BB50C0 /* Picture.swift */,
 				3788B28820BC07C7005D0637 /* Pictures.swift */,
@@ -434,6 +445,7 @@
 			files = (
 				377B3B5F20B6A8F200BB50C0 /* MyPageViewController.storyboard in Resources */,
 				3753AD9E20B6927900612D6B /* CategoryCollectionViewCell.xib in Resources */,
+				377AD59520BD1BCF00C210F8 /* like.json in Resources */,
 				3753ADAA20B6A43A00612D6B /* HomeViewController.storyboard in Resources */,
 				3753AD7720B56F5700612D6B /* LaunchScreen.storyboard in Resources */,
 				3753AD7420B56F5700612D6B /* Assets.xcassets in Resources */,

@@ -15,10 +15,11 @@ final class EmbeddedSectionController: ListSectionController {
     
     override init() {
          super.init()
+        self.inset = UIEdgeInsets(top: 18, left: 16, bottom: 18, right: 0)
     }
     
     override func sizeForItem(at index: Int) -> CGSize {
-        return CGSize(width: 226, height: 326)   
+        return CGSize(width: 210, height: 290)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {

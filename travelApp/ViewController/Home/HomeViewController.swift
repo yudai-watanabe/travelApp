@@ -18,17 +18,18 @@ class HomeViewController: UIViewController {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
     }()
     
-    let data: Array<ListDiffable> = [
+    let data: [ListDiffable] = [
         Category(categoryTitle: "Popularity"),
-        Pictures("Popularity",
-                 pictures: [Picture(imageUrl: "https://media.timeout.com/images/102920649/image.jpg",
-                                    title: "New York City"),
-                            Picture(imageUrl: "https://potovanja.over.net/wp-content/uploads/2017/05/rio.jpg",
-                                    title: "Rio de Janeiro")]),
+        Pictures("Popularity", pictures: [Picture(imageUrl: "https://media.timeout.com/images/102920649/image.jpg",
+                                                  title: "New York City"),
+                                          Picture(imageUrl: "https://potovanja.over.net/wp-content/uploads/2017/05/rio.jpg",
+                                                  title: "Rio de Janeiro")]),
         Category(categoryTitle: "Recommended"),
-        Pictures("Recommended",
+        Pictures("Recommende",
                  pictures: [Picture(imageUrl: "https://farm5.staticflickr.com/4301/35992332716_a8b03bda09_b.jpg",
-                                    title: "Balcelona")])
+                                    title: "Balcelona"),
+                            Picture(imageUrl: "https://media.timeout.com/images/102920649/image.jpg",
+                                    title: "New York City")])
     ]
     
     override func viewDidLoad() {
@@ -61,7 +62,7 @@ extension HomeViewController: ListAdapterDataSource {
             let sectionController = CategorySectionController()
             sectionController.category = object as? Category
             return sectionController
-        case is Array<Picture>: return HorizontalSectionController()
+        case is Pictures: return HorizontalSectionController()
         default: fatalError()
         }
     }

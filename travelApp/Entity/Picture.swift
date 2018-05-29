@@ -25,12 +25,12 @@ extension Picture: ListDiffable {
     func diffIdentifier() -> NSObjectProtocol {
         return title as NSObjectProtocol
     }
-    
+
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
         if let pictureObj = object as? Picture {
             return self.imageUrl == pictureObj.title || self.title == pictureObj.title
         }
         return false
     }
-    
+
 }

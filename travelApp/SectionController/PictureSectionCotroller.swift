@@ -14,10 +14,6 @@ final class PictureSectionController: ListSectionController {
     
     var picture: Picture?
     
-    override func numberOfItems() -> Int {
-        return 1
-    }
-    
     override func sizeForItem(at index: Int) -> CGSize {
         return CGSize(width: 226, height: 326)
     }

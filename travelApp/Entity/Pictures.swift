@@ -15,7 +15,7 @@ class Pictures {
     let pictures: Array<Picture>
     
     init(_ category: String, pictures: Array<Picture>) {
-        self.category = category
+        self.category = category + "Pictures"
         self.pictures = pictures
     }
     

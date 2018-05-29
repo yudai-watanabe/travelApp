@@ -20,17 +20,17 @@ final class HorizontalSectionController: ListSectionController {
         return adapter
     }()
     
+    override func numberOfItems() -> Int {
+        return 1
+    }
+    
     override func sizeForItem(at index: Int) -> CGSize {
         return CGSize(width: collectionContext!.containerSize.width,
                       height: 326)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
-        guard let cell = collectionContext?.dequeueReusableCell(withNibName: "EmbeddedCollectionViewCell",
-                                                                bundle: nil,
-                                                                for: self, at: index) as? EmbeddedCollectionViewCell else{
-                                                                    fatalError("category is nil OR PictureCollectionViewCell has can`t founded")
-        }
+        let cell = collectionContext!.dequeueReusableCell(of: EmbeddedCollectionViewCell.self, for: self, at: index) as! EmbeddedCollectionViewCell
         adapter.collectionView = cell.collectionView
         return cell
     }

@@ -14,10 +14,6 @@ final class CategorySectionController: ListSectionController {
     
     var category: Category?
     
-    override func numberOfItems() -> Int {
-        return 1
-    }
-    
     override func sizeForItem(at index: Int) -> CGSize {
         return CGSize(width: collectionContext!.containerSize.width, height: 64)
     }
