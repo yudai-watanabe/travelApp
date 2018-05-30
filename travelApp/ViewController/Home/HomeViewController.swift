@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    open var tapCellAction: (() -> Void)?
+    
     private lazy var adapter: ListAdapter = {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
     }()
@@ -37,6 +39,7 @@ class HomeViewController: UIViewController {
         adapter.collectionView = collectionView
         adapter.dataSource = self
         // Do any additional setup after loading the view.
+        tapCellAction?()
     }
 
     override func viewDidLayoutSubviews() {
