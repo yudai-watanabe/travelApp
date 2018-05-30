@@ -8,6 +8,7 @@
 
 import UIKit
 import IGListKit
+import BouncyLayout
 
 final class EmbeddedCollectionViewCell: UICollectionViewCell {
     

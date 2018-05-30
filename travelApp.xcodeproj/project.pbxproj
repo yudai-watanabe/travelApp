@@ -22,6 +22,12 @@
 		3753ADAA20B6A43A00612D6B /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3753ADA920B6A43A00612D6B /* HomeViewController.storyboard */; };
 		377AD59520BD1BCF00C210F8 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59420BD1BCF00C210F8 /* like.json */; };
 		377AD59720BD23F300C210F8 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59620BD23F300C210F8 /* heart.json */; };
+		377AD59920BE4C2800C210F8 /* BouncyLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377AD59820BE4C2800C210F8 /* BouncyLayout.framework */; };
+		377AD59B20BE4C3B00C210F8 /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377AD59A20BE4C3B00C210F8 /* ESTabBarController.framework */; };
+		377AD59E20BE55F400C210F8 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377AD59D20BE55F400C210F8 /* DestinationViewController.swift */; };
+		377AD5A020BE567D00C210F8 /* DestinationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59F20BE567D00C210F8 /* DestinationViewController.storyboard */; };
+		377AD5A220BE806E00C210F8 /* like2.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD5A120BE806E00C210F8 /* like2.json */; };
+		377AD5A420BE834500C210F8 /* UIView + Gradation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377AD5A320BE834500C210F8 /* UIView + Gradation.swift */; };
 		377B3B5820B6A85F00BB50C0 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B5720B6A85F00BB50C0 /* TripViewController.swift */; };
 		377B3B5A20B6A8B000BB50C0 /* TripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377B3B5920B6A8B000BB50C0 /* TripViewController.storyboard */; };
 		377B3B5C20B6A8D400BB50C0 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B5B20B6A8D400BB50C0 /* MyPageViewController.swift */; };
@@ -88,6 +94,12 @@
 		3753ADA920B6A43A00612D6B /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		377AD59420BD1BCF00C210F8 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
 		377AD59620BD23F300C210F8 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
+		377AD59820BE4C2800C210F8 /* BouncyLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BouncyLayout.framework; path = Carthage/Build/iOS/BouncyLayout.framework; sourceTree = "<group>"; };
+		377AD59A20BE4C3B00C210F8 /* ESTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESTabBarController.framework; path = Carthage/Build/iOS/ESTabBarController.framework; sourceTree = "<group>"; };
+		377AD59D20BE55F400C210F8 /* DestinationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationViewController.swift; sourceTree = "<group>"; };
+		377AD59F20BE567D00C210F8 /* DestinationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DestinationViewController.storyboard; sourceTree = "<group>"; };
+		377AD5A120BE806E00C210F8 /* like2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like2.json; sourceTree = "<group>"; };
+		377AD5A320BE834500C210F8 /* UIView + Gradation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Gradation.swift"; sourceTree = "<group>"; };
 		377B3B5720B6A85F00BB50C0 /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		377B3B5920B6A8B000BB50C0 /* TripViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripViewController.storyboard; sourceTree = "<group>"; };
 		377B3B5B20B6A8D400BB50C0 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377AD59B20BE4C3B00C210F8 /* ESTabBarController.framework in Frameworks */,
+				377AD59920BE4C2800C210F8 /* BouncyLayout.framework in Frameworks */,
 				377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */,
 				377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */,
 				377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */,
@@ -235,6 +249,7 @@
 		3753ADA620B6A26F00612D6B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				377AD59C20BE558F00C210F8 /* Destination */,
 				3753ADAB20B6A4B300612D6B /* Home */,
 				377B3B5620B6A84D00BB50C0 /* Trip */,
 				377B3B5D20B6A8DA00BB50C0 /* MyPage */,
@@ -254,10 +269,20 @@
 		377AD59320BD1BA300C210F8 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				377AD5A120BE806E00C210F8 /* like2.json */,
 				377AD59420BD1BCF00C210F8 /* like.json */,
 				377AD59620BD23F300C210F8 /* heart.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		377AD59C20BE558F00C210F8 /* Destination */ = {
+			isa = PBXGroup;
+			children = (
+				377AD59D20BE55F400C210F8 /* DestinationViewController.swift */,
+				377AD59F20BE567D00C210F8 /* DestinationViewController.storyboard */,
+			);
+			path = Destination;
 			sourceTree = "<group>";
 		};
 		377B3B5620B6A84D00BB50C0 /* Trip */ = {
@@ -296,6 +321,7 @@
 				377B3B6D20B6B1D300BB50C0 /* UIViewController + Base.swift */,
 				377B3B6F20B6B2CC00BB50C0 /* NSObject + Base.swift */,
 				3788B27D20BB9733005D0637 /* UIView + cornerRadius.swift */,
+				377AD5A320BE834500C210F8 /* UIView + Gradation.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -303,6 +329,8 @@
 		377B3B7120B7A88B00BB50C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				377AD59A20BE4C3B00C210F8 /* ESTabBarController.framework */,
+				377AD59820BE4C2800C210F8 /* BouncyLayout.framework */,
 				377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */,
 				377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */,
 				377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */,
@@ -447,10 +475,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				377B3B5F20B6A8F200BB50C0 /* MyPageViewController.storyboard in Resources */,
+				377AD5A220BE806E00C210F8 /* like2.json in Resources */,
 				3753AD9E20B6927900612D6B /* CategoryCollectionViewCell.xib in Resources */,
 				377AD59520BD1BCF00C210F8 /* like.json in Resources */,
 				3753ADAA20B6A43A00612D6B /* HomeViewController.storyboard in Resources */,
 				3753AD7720B56F5700612D6B /* LaunchScreen.storyboard in Resources */,
+				377AD5A020BE567D00C210F8 /* DestinationViewController.storyboard in Resources */,
 				3753AD7420B56F5700612D6B /* Assets.xcassets in Resources */,
 				3753ADA420B69B3100612D6B /* PictureCollectionViewCell.xib in Resources */,
 				3753AD7220B56F5400612D6B /* Main.storyboard in Resources */,
@@ -486,7 +516,9 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Lottie.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
-				"$(SRCROOT)/carthage/Build/iOS/BulletinBoard.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BulletinBoard.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/BouncyLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ESTabBarController.framework",
 			);
 			outputPaths = (
 			);
@@ -506,6 +538,7 @@
 				377B3B6B20B6AE9F00BB50C0 /* MyPageCoordinator.swift in Sources */,
 				3753AD6F20B56F5400612D6B /* ViewController.swift in Sources */,
 				377B3B5C20B6A8D400BB50C0 /* MyPageViewController.swift in Sources */,
+				377AD5A420BE834500C210F8 /* UIView + Gradation.swift in Sources */,
 				3788B28420BBF32B005D0637 /* EmbeddedSectionController.swift in Sources */,
 				377B3B7020B6B2CC00BB50C0 /* NSObject + Base.swift in Sources */,
 				377B3B6E20B6B1D300BB50C0 /* UIViewController + Base.swift in Sources */,
@@ -520,6 +553,7 @@
 				377B3B7A20B7A96900BB50C0 /* Category.swift in Sources */,
 				377B3B6720B6AD4C00BB50C0 /* HomeCoordinator.swift in Sources */,
 				377B3B8320B7EEFE00BB50C0 /* Picture.swift in Sources */,
+				377AD59E20BE55F400C210F8 /* DestinationViewController.swift in Sources */,
 				3788B28220BBD82C005D0637 /* EmbeddedCollectionViewCell.swift in Sources */,
 				377B3B6220B6AA5000BB50C0 /* ApplicationCoordinator.swift in Sources */,
 				3788B27E20BB9733005D0637 /* UIView + cornerRadius.swift in Sources */,

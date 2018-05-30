@@ -36,22 +36,22 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="aZL-aD-Nqg" customClass="LOTAnimationView">
-                        <rect key="frame" x="170" y="10" width="30" height="30"/>
+                        <rect key="frame" x="170" y="0.0" width="40" height="100"/>
                         <accessibility key="accessibilityConfiguration">
                             <accessibilityTraits key="traits" button="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="DMF-Jx-LWa"/>
-                            <constraint firstAttribute="width" constant="30" id="Yt5-w0-n5E"/>
+                            <constraint firstAttribute="height" constant="100" id="DMF-Jx-LWa"/>
+                            <constraint firstAttribute="width" constant="40" id="Yt5-w0-n5E"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="zsv-hu-k3E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="1ue-7j-lgm"/>
-                <constraint firstAttribute="trailing" secondItem="aZL-aD-Nqg" secondAttribute="trailing" constant="10" id="Rw8-u9-YZN"/>
+                <constraint firstAttribute="trailing" secondItem="aZL-aD-Nqg" secondAttribute="trailing" id="Rw8-u9-YZN"/>
                 <constraint firstAttribute="bottom" secondItem="zsv-hu-k3E" secondAttribute="bottom" constant="14" id="XOk-xl-pst"/>
-                <constraint firstItem="aZL-aD-Nqg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="wQo-G7-jsB"/>
+                <constraint firstItem="aZL-aD-Nqg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wQo-G7-jsB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="429" height="567"/>
