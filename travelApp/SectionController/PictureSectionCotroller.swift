@@ -15,10 +15,12 @@ final class PictureSectionController: ListSectionController {
     var picture: Picture?
     
     override func sizeForItem(at index: Int) -> CGSize {
+        super.sizeForItem(at: index)
         return CGSize(width: 226, height: 326)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
+        super.cellForItem(at: index)
         guard let picture = picture,
             let cell = collectionContext?.dequeueReusableCell(withNibName: "PictureCollectionViewCell",
                                                               bundle: nil,

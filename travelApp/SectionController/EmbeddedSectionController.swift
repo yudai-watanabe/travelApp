@@ -15,14 +15,16 @@ final class EmbeddedSectionController: ListSectionController {
     
     override init() {
          super.init()
-        self.inset = UIEdgeInsets(top: 18, left: 16, bottom: 18, right: 0)
+        self.inset = UIEdgeInsets(top: 18, left: 16, bottom: 56, right: 0)
     }
     
     override func sizeForItem(at index: Int) -> CGSize {
+        super.sizeForItem(at: index)
         return CGSize(width: 210, height: 290)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
+        super.cellForItem(at: index)
         guard let picture = picture,
             let cell = collectionContext?.dequeueReusableCell(withNibName: "PictureCollectionViewCell",
                                                               bundle: nil,
@@ -34,7 +36,13 @@ final class EmbeddedSectionController: ListSectionController {
     }
     
     override func didUpdate(to object: Any) {
+        super.didUpdate(to: object)
         self.picture = object as? Picture
+    }
+    
+    override func didSelectItem(at index: Int) {
+        super.didSelectItem(at: index)
+        print("tapped")
     }
     
 }

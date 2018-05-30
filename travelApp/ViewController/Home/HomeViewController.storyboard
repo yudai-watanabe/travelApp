@@ -56,18 +56,11 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="CjE-8f-onN" id="8vj-vB-D9p"/>
-                        <outlet property="searchDisplayController" destination="KTp-Mh-HXn" id="T3q-U9-Bg8"/>
+                        <outlet property="searchBar" destination="PxS-8L-geL" id="XQ2-Qs-NvP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GBG-5p-oRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <searchDisplayController id="KTp-Mh-HXn">
-                    <connections>
-                        <outlet property="delegate" destination="8RP-dJ-cRl" id="8WB-Sp-AqO"/>
-                        <outlet property="searchContentsController" destination="8RP-dJ-cRl" id="V2y-gS-Nmd"/>
-                        <outlet property="searchResultsDataSource" destination="8RP-dJ-cRl" id="hq0-oQ-HgP"/>
-                        <outlet property="searchResultsDelegate" destination="8RP-dJ-cRl" id="N16-0U-sjo"/>
-                    </connections>
-                </searchDisplayController>
+                <searchDisplayController id="KTp-Mh-HXn"/>
             </objects>
             <point key="canvasLocation" x="64.799999999999997" y="11.244377811094454"/>
         </scene>

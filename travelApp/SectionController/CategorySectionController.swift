@@ -15,6 +15,7 @@ final class CategorySectionController: ListSectionController {
     private var category: Category?
     
     override func sizeForItem(at index: Int) -> CGSize {
+        super.sizeForItem(at: index)
         return CGSize(width: collectionContext!.containerSize.width, height: 64)
     }
     
@@ -31,6 +32,7 @@ final class CategorySectionController: ListSectionController {
     }
     
     override func didUpdate(to object: Any) {
+        super.didUpdate(to: object)
         self.category = object as? Category
     }
     

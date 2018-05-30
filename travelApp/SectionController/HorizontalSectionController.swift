@@ -21,21 +21,25 @@ final class HorizontalSectionController: ListSectionController {
     }()
     
     override func numberOfItems() -> Int {
+        super.numberOfItems()
         return 1
     }
     
     override func sizeForItem(at index: Int) -> CGSize {
+        super.sizeForItem(at: index)
         return CGSize(width: collectionContext!.containerSize.width,
                       height: 326)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
+        super.cellForItem(at: index)
         let cell = collectionContext!.dequeueReusableCell(of: EmbeddedCollectionViewCell.self, for: self, at: index) as! EmbeddedCollectionViewCell
         adapter.collectionView = cell.collectionView
         return cell
     }
     
     override func didUpdate(to object: Any) {
+        super.didUpdate(to: object)
         if let pictures = object as? Pictures {
             self.pictures = pictures.pictures
         }
