@@ -31,6 +31,7 @@ class ApplicationCoordinator: Coordinator {
         self.homeCoordinator = HomeCoordinator(presenter: homeNavigationController)
         self.tripCoordinator = TripCoordinator(presenter: tripNavigationController)
         self.myPageCoordinator = MyPageCoordinator(presenter: myPageNavigationController)
+        self.rootViewController.tabBar.tintColor = .black
     }
     
     func start() {

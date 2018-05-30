@@ -1,0 +1,11 @@
+framework module BouncyLayout {
+  umbrella header "BouncyLayout.h"
+
+  export *
+  module * { export * }
+}
+
+module BouncyLayout.Swift {
+    header "BouncyLayout-Swift.h"
+    requires objc
+}

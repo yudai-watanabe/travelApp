@@ -21,7 +21,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="eY1-8m-V5I">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
-                                    <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Travel destination" translatesAutoresizingMaskIntoConstraints="NO" id="PxS-8L-geL">
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Where will you go on your trip?" translatesAutoresizingMaskIntoConstraints="NO" id="PxS-8L-geL">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="Dy8-Rc-hPH"/>
