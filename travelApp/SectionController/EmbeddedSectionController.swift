@@ -9,9 +9,17 @@
 import UIKit
 import IGListKit
 
+protocol EmbeddedSectionControllerDelegate : NSObjectProtocol{
+    func selected(_ cell: PictureCollectionViewCell?)
+}
+
 final class EmbeddedSectionController: ListSectionController {
     
     private var picture: Picture?
+    
+    private var cell: PictureCollectionViewCell?
+    
+    weak var delegate: EmbeddedSectionControllerDelegate?
     
     override init() {
          super.init()
@@ -25,14 +33,14 @@ final class EmbeddedSectionController: ListSectionController {
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         super.cellForItem(at: index)
-        guard let picture = picture,
-            let cell = collectionContext?.dequeueReusableCell(withNibName: "PictureCollectionViewCell",
-                                                              bundle: nil,
-                                                              for: self, at: index) as? PictureCollectionViewCell else{
-                                                                fatalError("category is nil OR PictureCollectionViewCell has can`t founded")
+        guard let picture = picture else{
+            fatalError("category is nil OR PictureCollectionViewCell has can`t founded")
         }
-        cell.picture = picture
-        return cell
+        cell = collectionContext?.dequeueReusableCell(withNibName: "PictureCollectionViewCell",
+                                                      bundle: nil,
+                                                      for: self, at: index) as? PictureCollectionViewCell
+        cell?.picture = picture
+        return cell!
     }
     
     override func didUpdate(to object: Any) {
@@ -40,9 +48,11 @@ final class EmbeddedSectionController: ListSectionController {
         self.picture = object as? Picture
     }
     
+    
+    
     override func didSelectItem(at index: Int) {
         super.didSelectItem(at: index)
-        print("tapped")
+        delegate?.selected(cell)
     }
     
 }

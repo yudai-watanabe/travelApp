@@ -14,7 +14,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    open var tapCellAction: (() -> Void)?
+    open var selectedPictureCellAction: ((PictureCollectionViewCell) -> Void)?
     
     private lazy var adapter: ListAdapter = {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
@@ -38,8 +38,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         adapter.collectionView = collectionView
         adapter.dataSource = self
-        // Do any additional setup after loading the view.
-        tapCellAction?()
     }
 
     override func viewDidLayoutSubviews() {
@@ -62,13 +60,29 @@ extension HomeViewController: ListAdapterDataSource {
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         switch object {
         case is Category: return CategorySectionController()
-        case is Pictures: return HorizontalSectionController()
+        case is Pictures:
+            let sectionController: HorizontalSectionController = HorizontalSectionController()
+            sectionController.delegate = self
+            return sectionController
         default: fatalError()
         }
     }
     
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
+    }
+    
+}
+
+// MARK: - HorizontalSectionControllerDelegate
+
+extension HomeViewController: HorizontalSectionControllerDelegate {
+    
+    func selected(_ cell: PictureCollectionViewCell?) {
+        guard let pictureCell = cell else {
+            fatalError("can't found picture cell")
+        }
+        selectedPictureCellAction?(pictureCell)
     }
     
     

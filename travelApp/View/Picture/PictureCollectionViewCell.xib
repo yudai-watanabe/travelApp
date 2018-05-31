@@ -56,7 +56,7 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="429" height="567"/>
             <connections>
-                <outlet property="animationView" destination="aZL-aD-Nqg" id="Ag9-Cz-n5i"/>
+                <outlet property="animationView" destination="aZL-aD-Nqg" id="PEY-Jj-GVx"/>
                 <outlet property="image" destination="TOu-Gi-nal" id="gUS-XI-3wf"/>
                 <outlet property="title" destination="zsv-hu-k3E" id="WSo-dk-7Pf"/>
             </connections>

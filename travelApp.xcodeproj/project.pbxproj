@@ -26,6 +26,7 @@
 		377AD5A020BE567D00C210F8 /* DestinationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59F20BE567D00C210F8 /* DestinationViewController.storyboard */; };
 		377AD5A220BE806E00C210F8 /* like2.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD5A120BE806E00C210F8 /* like2.json */; };
 		377AD5A420BE834500C210F8 /* UIView + Gradation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377AD5A320BE834500C210F8 /* UIView + Gradation.swift */; };
+		377AD5A820BFDEBE00C210F8 /* GradientView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377AD5A720BFDEBE00C210F8 /* GradientView.framework */; };
 		377B3B5820B6A85F00BB50C0 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B5720B6A85F00BB50C0 /* TripViewController.swift */; };
 		377B3B5A20B6A8B000BB50C0 /* TripViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377B3B5920B6A8B000BB50C0 /* TripViewController.storyboard */; };
 		377B3B5C20B6A8D400BB50C0 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B5B20B6A8D400BB50C0 /* MyPageViewController.swift */; };
@@ -98,6 +99,8 @@
 		377AD59F20BE567D00C210F8 /* DestinationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DestinationViewController.storyboard; sourceTree = "<group>"; };
 		377AD5A120BE806E00C210F8 /* like2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like2.json; sourceTree = "<group>"; };
 		377AD5A320BE834500C210F8 /* UIView + Gradation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Gradation.swift"; sourceTree = "<group>"; };
+		377AD5A520BFDEAD00C210F8 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = "<group>"; };
+		377AD5A720BFDEBE00C210F8 /* GradientView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GradientView.framework; path = Carthage/Build/iOS/GradientView.framework; sourceTree = "<group>"; };
 		377B3B5720B6A85F00BB50C0 /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		377B3B5920B6A8B000BB50C0 /* TripViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TripViewController.storyboard; sourceTree = "<group>"; };
 		377B3B5B20B6A8D400BB50C0 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377AD5A820BFDEBE00C210F8 /* GradientView.framework in Frameworks */,
 				377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */,
 				377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */,
 				377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */,
@@ -181,7 +185,6 @@
 			children = (
 				377AD59320BD1BA300C210F8 /* JSON */,
 				3753AD6C20B56F5400612D6B /* AppDelegate.swift */,
-				377B3B6C20B6B0A700BB50C0 /* Extension */,
 				377B3B6020B6AA2400BB50C0 /* ApplicationCooridnator */,
 				377B3B7820B7A94600BB50C0 /* Entity */,
 				3753AD9A20B6920D00612D6B /* View */,
@@ -265,6 +268,7 @@
 		377AD59320BD1BA300C210F8 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				377B3B6C20B6B0A700BB50C0 /* Extension */,
 				377AD5A120BE806E00C210F8 /* like2.json */,
 				377AD59420BD1BCF00C210F8 /* like.json */,
 				377AD59620BD23F300C210F8 /* heart.json */,
@@ -325,6 +329,8 @@
 		377B3B7120B7A88B00BB50C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				377AD5A720BFDEBE00C210F8 /* GradientView.framework */,
+				377AD5A520BFDEAD00C210F8 /* Carthage */,
 				377AD59A20BE4C3B00C210F8 /* ESTabBarController.framework */,
 				377AD59820BE4C2800C210F8 /* BouncyLayout.framework */,
 				377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */,
@@ -513,6 +519,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BulletinBoard.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/GradientView.framework",
 			);
 			outputPaths = (
 			);

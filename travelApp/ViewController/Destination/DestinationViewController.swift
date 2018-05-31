@@ -7,12 +7,24 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
+import GradientView
+import Lottie
 
 class DestinationViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var imageBaseView: UIView!
+    
+    var picture: Picture?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.cityNameLabel.text = picture?.title
+        self.imageView.af_setImage(withURL: URL(string: picture!.imageUrl)!)
+        self.addGradientView()
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +33,15 @@ class DestinationViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    private func addGradientView() {
+        let rect: CGRect = CGRect(x: 0, y: imageBaseView.frame.height / 2,
+                                  width: imageBaseView.frame.width,
+                                  height: imageBaseView.frame.height/2)
+        let gradientView: GradientView = GradientView(frame: rect)
+        gradientView.backgroundColor = .clear
+        gradientView.colors = [.clear, .white]
+        gradientView.direction = .vertical
+        self.imageView.addSubview(gradientView)
     }
-    */
-
 }

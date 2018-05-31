@@ -22,8 +22,9 @@ class HomeCoordinator: Coordinator {
         self.homeViewController = HomeViewController.instantiateFromStoryBoard() as! HomeViewController
         self.homeViewController.title = title
         self.homeViewController.tabBarItem.image = #imageLiteral(resourceName: "tab_home_active")
-        self.homeViewController.tapCellAction = {
+        self.homeViewController.selectedPictureCellAction = {cell in
             let destinationViewController = DestinationViewController.instantiateFromStoryBoard() as! DestinationViewController
+            destinationViewController.picture = cell.picture
             presenter.pushViewController(destinationViewController, animated: true)
         }
     }

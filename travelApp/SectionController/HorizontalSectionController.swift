@@ -9,9 +9,15 @@
 import IGListKit
 import UIKit
 
+protocol HorizontalSectionControllerDelegate: NSObjectProtocol {
+    func selected(_ cell: PictureCollectionViewCell?)
+}
+
 final class HorizontalSectionController: ListSectionController {
     
     private var pictures: Array<Picture>?
+    
+    weak var delegate: HorizontalSectionControllerDelegate?
     
     lazy var adapter: ListAdapter = {
         let adapter = ListAdapter(updater: ListAdapterUpdater(),
@@ -55,11 +61,21 @@ extension HorizontalSectionController: ListAdapterDataSource {
     }
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
-        return EmbeddedSectionController()
+        let sectionController: EmbeddedSectionController = EmbeddedSectionController()
+        sectionController.delegate = self
+        return sectionController
     }
     
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
+    }
+    
+}
+
+extension HorizontalSectionController: EmbeddedSectionControllerDelegate {
+    
+    func selected(_ cell: PictureCollectionViewCell?) {
+        delegate?.selected(cell)
     }
     
 }

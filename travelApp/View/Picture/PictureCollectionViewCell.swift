@@ -45,6 +45,8 @@ class PictureCollectionViewCell: UICollectionViewCell {
     }
     
     @objc func tap() {
-        animationView.play()
+        animationView.play(completion: {[weak self] bool in
+            self?.animationView.stop()
+        })
     }
 }
