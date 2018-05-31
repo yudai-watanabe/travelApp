@@ -1,9 +1,0 @@
-{
-  "commitish" : "2.1.0",
-  "iOS" : [
-    {
-      "name" : "BouncyLayout",
-      "hash" : "6d0bd1fd79237c43177b50c1a965bba84001b944e1fd4326931c722092c0d112"
-    }
-  ]
-}

@@ -1,9 +1,0 @@
-{
-  "commitish" : "2.5.0",
-  "iOS" : [
-    {
-      "name" : "Lottie",
-      "hash" : "237ee555a2e1861fed93eb53206309e129442bd1c35f03c524bd174139d7f728"
-    }
-  ]
-}

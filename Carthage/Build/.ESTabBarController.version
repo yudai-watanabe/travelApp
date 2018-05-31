@@ -1,9 +1,0 @@
-{
-  "commitish" : "2.6.2",
-  "iOS" : [
-    {
-      "name" : "ESTabBarController",
-      "hash" : "57c7d4a4221a790bf7347b74eff4431a1bd5620bc015f272b231d1ac32a1afe5"
-    }
-  ]
-}
