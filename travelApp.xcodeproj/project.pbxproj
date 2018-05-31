@@ -22,8 +22,6 @@
 		3753ADAA20B6A43A00612D6B /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3753ADA920B6A43A00612D6B /* HomeViewController.storyboard */; };
 		377AD59520BD1BCF00C210F8 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59420BD1BCF00C210F8 /* like.json */; };
 		377AD59720BD23F300C210F8 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59620BD23F300C210F8 /* heart.json */; };
-		377AD59920BE4C2800C210F8 /* BouncyLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377AD59820BE4C2800C210F8 /* BouncyLayout.framework */; };
-		377AD59B20BE4C3B00C210F8 /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377AD59A20BE4C3B00C210F8 /* ESTabBarController.framework */; };
 		377AD59E20BE55F400C210F8 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377AD59D20BE55F400C210F8 /* DestinationViewController.swift */; };
 		377AD5A020BE567D00C210F8 /* DestinationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59F20BE567D00C210F8 /* DestinationViewController.storyboard */; };
 		377AD5A220BE806E00C210F8 /* like2.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD5A120BE806E00C210F8 /* like2.json */; };
@@ -132,8 +130,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				377AD59B20BE4C3B00C210F8 /* ESTabBarController.framework in Frameworks */,
-				377AD59920BE4C2800C210F8 /* BouncyLayout.framework in Frameworks */,
 				377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */,
 				377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */,
 				377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */,
@@ -517,8 +513,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BulletinBoard.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/BouncyLayout.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ESTabBarController.framework",
 			);
 			outputPaths = (
 			);
