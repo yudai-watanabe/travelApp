@@ -34,7 +34,7 @@ final class HorizontalSectionController: ListSectionController {
     override func sizeForItem(at index: Int) -> CGSize {
         super.sizeForItem(at: index)
         return CGSize(width: collectionContext!.containerSize.width,
-                      height: 326)
+                      height: 356)
     }
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {

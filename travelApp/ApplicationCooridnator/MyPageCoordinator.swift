@@ -13,13 +13,13 @@ class MyPageCoordinator: Coordinator {
     
     let presenter: UINavigationController
     
-    private var myPageViewController: DestinationViewController
+    private var myPageViewController: MyPageViewController
     
     private let title: String = "MyPage"
     
     init(presenter: UINavigationController) {
         self.presenter = presenter
-        self.myPageViewController = DestinationViewController.instantiateFromStoryBoard() as! DestinationViewController
+        self.myPageViewController = MyPageViewController.instantiateFromStoryBoard() as! MyPageViewController
         self.myPageViewController.title = title
         self.myPageViewController.tabBarItem.image = #imageLiteral(resourceName: "tab_mypage")
     }

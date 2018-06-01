@@ -20,6 +20,10 @@
 		3753ADA420B69B3100612D6B /* PictureCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3753ADA220B69B3100612D6B /* PictureCollectionViewCell.xib */; };
 		3753ADA820B6A40B00612D6B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753ADA720B6A40B00612D6B /* HomeViewController.swift */; };
 		3753ADAA20B6A43A00612D6B /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3753ADA920B6A43A00612D6B /* HomeViewController.storyboard */; };
+		376C799020C0E86D00558E93 /* HotelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C798E20C0E86D00558E93 /* HotelCollectionViewCell.swift */; };
+		376C799120C0E86D00558E93 /* HotelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 376C798F20C0E86D00558E93 /* HotelCollectionViewCell.xib */; };
+		376C799320C0F3F000558E93 /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376C799220C0F3F000558E93 /* Hotel.swift */; };
+		376C799520C11E8D00558E93 /* airplane.json in Resources */ = {isa = PBXBuildFile; fileRef = 376C799420C11E8D00558E93 /* airplane.json */; };
 		377AD59520BD1BCF00C210F8 /* like.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59420BD1BCF00C210F8 /* like.json */; };
 		377AD59720BD23F300C210F8 /* heart.json in Resources */ = {isa = PBXBuildFile; fileRef = 377AD59620BD23F300C210F8 /* heart.json */; };
 		377AD59E20BE55F400C210F8 /* DestinationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377AD59D20BE55F400C210F8 /* DestinationViewController.swift */; };
@@ -42,7 +46,7 @@
 		377B3B7520B7A88B00BB50C0 /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B7320B7A88B00BB50C0 /* Lottie.framework */; };
 		377B3B7A20B7A96900BB50C0 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B7920B7A96900BB50C0 /* Category.swift */; };
 		377B3B7D20B7B0E600BB50C0 /* CategorySectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B7C20B7B0E600BB50C0 /* CategorySectionController.swift */; };
-		377B3B7F20B7E98F00BB50C0 /* PictureSectionCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B7E20B7E98F00BB50C0 /* PictureSectionCotroller.swift */; };
+		377B3B7F20B7E98F00BB50C0 /* HotelSectionCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B7E20B7E98F00BB50C0 /* HotelSectionCotroller.swift */; };
 		377B3B8320B7EEFE00BB50C0 /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377B3B8220B7EEFE00BB50C0 /* Picture.swift */; };
 		377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */; };
 		377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */; };
@@ -91,6 +95,10 @@
 		3753ADA220B69B3100612D6B /* PictureCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureCollectionViewCell.xib; sourceTree = "<group>"; };
 		3753ADA720B6A40B00612D6B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3753ADA920B6A43A00612D6B /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		376C798E20C0E86D00558E93 /* HotelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelCollectionViewCell.swift; sourceTree = "<group>"; };
+		376C798F20C0E86D00558E93 /* HotelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelCollectionViewCell.xib; sourceTree = "<group>"; };
+		376C799220C0F3F000558E93 /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		376C799420C11E8D00558E93 /* airplane.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airplane.json; sourceTree = "<group>"; };
 		377AD59420BD1BCF00C210F8 /* like.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = like.json; sourceTree = "<group>"; };
 		377AD59620BD23F300C210F8 /* heart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = heart.json; sourceTree = "<group>"; };
 		377AD59820BE4C2800C210F8 /* BouncyLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BouncyLayout.framework; path = Carthage/Build/iOS/BouncyLayout.framework; sourceTree = "<group>"; };
@@ -116,7 +124,7 @@
 		377B3B7320B7A88B00BB50C0 /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		377B3B7920B7A96900BB50C0 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		377B3B7C20B7B0E600BB50C0 /* CategorySectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySectionController.swift; sourceTree = "<group>"; };
-		377B3B7E20B7E98F00BB50C0 /* PictureSectionCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSectionCotroller.swift; sourceTree = "<group>"; };
+		377B3B7E20B7E98F00BB50C0 /* HotelSectionCotroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelSectionCotroller.swift; sourceTree = "<group>"; };
 		377B3B8220B7EEFE00BB50C0 /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -183,8 +191,9 @@
 		3753AD6B20B56F5400612D6B /* travelApp */ = {
 			isa = PBXGroup;
 			children = (
-				377AD59320BD1BA300C210F8 /* JSON */,
 				3753AD6C20B56F5400612D6B /* AppDelegate.swift */,
+				377B3B6C20B6B0A700BB50C0 /* Extension */,
+				377AD59320BD1BA300C210F8 /* JSON */,
 				377B3B6020B6AA2400BB50C0 /* ApplicationCooridnator */,
 				377B3B7820B7A94600BB50C0 /* Entity */,
 				3753AD9A20B6920D00612D6B /* View */,
@@ -220,6 +229,7 @@
 		3753AD9A20B6920D00612D6B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				376C798D20C0E82900558E93 /* Hotel */,
 				3788B28020BBD691005D0637 /* Embedded */,
 				3753ADA020B69B1100612D6B /* Picture */,
 				3753AD9F20B69B0100612D6B /* Category */,
@@ -265,10 +275,19 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		376C798D20C0E82900558E93 /* Hotel */ = {
+			isa = PBXGroup;
+			children = (
+				376C798E20C0E86D00558E93 /* HotelCollectionViewCell.swift */,
+				376C798F20C0E86D00558E93 /* HotelCollectionViewCell.xib */,
+			);
+			path = Hotel;
+			sourceTree = "<group>";
+		};
 		377AD59320BD1BA300C210F8 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				377B3B6C20B6B0A700BB50C0 /* Extension */,
+				376C799420C11E8D00558E93 /* airplane.json */,
 				377AD5A120BE806E00C210F8 /* like2.json */,
 				377AD59420BD1BCF00C210F8 /* like.json */,
 				377AD59620BD23F300C210F8 /* heart.json */,
@@ -348,6 +367,7 @@
 				377B3B7920B7A96900BB50C0 /* Category.swift */,
 				377B3B8220B7EEFE00BB50C0 /* Picture.swift */,
 				3788B28820BC07C7005D0637 /* Pictures.swift */,
+				376C799220C0F3F000558E93 /* Hotel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -356,7 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				377B3B7C20B7B0E600BB50C0 /* CategorySectionController.swift */,
-				377B3B7E20B7E98F00BB50C0 /* PictureSectionCotroller.swift */,
+				377B3B7E20B7E98F00BB50C0 /* HotelSectionCotroller.swift */,
 				3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */,
 				3788B28620BBF669005D0637 /* HorizontalSectionController.swift */,
 			);
@@ -476,6 +496,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376C799120C0E86D00558E93 /* HotelCollectionViewCell.xib in Resources */,
 				377B3B5F20B6A8F200BB50C0 /* MyPageViewController.storyboard in Resources */,
 				377AD5A220BE806E00C210F8 /* like2.json in Resources */,
 				3753AD9E20B6927900612D6B /* CategoryCollectionViewCell.xib in Resources */,
@@ -488,6 +509,7 @@
 				3753AD7220B56F5400612D6B /* Main.storyboard in Resources */,
 				377AD59720BD23F300C210F8 /* heart.json in Resources */,
 				377B3B5A20B6A8B000BB50C0 /* TripViewController.storyboard in Resources */,
+				376C799520C11E8D00558E93 /* airplane.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,16 +559,18 @@
 				3753ADA820B6A40B00612D6B /* HomeViewController.swift in Sources */,
 				377B3B7D20B7B0E600BB50C0 /* CategorySectionController.swift in Sources */,
 				377B3B6B20B6AE9F00BB50C0 /* MyPageCoordinator.swift in Sources */,
+				376C799320C0F3F000558E93 /* Hotel.swift in Sources */,
 				3753AD6F20B56F5400612D6B /* ViewController.swift in Sources */,
 				377B3B5C20B6A8D400BB50C0 /* MyPageViewController.swift in Sources */,
 				377AD5A420BE834500C210F8 /* UIView + Gradation.swift in Sources */,
 				3788B28420BBF32B005D0637 /* EmbeddedSectionController.swift in Sources */,
+				376C799020C0E86D00558E93 /* HotelCollectionViewCell.swift in Sources */,
 				377B3B7020B6B2CC00BB50C0 /* NSObject + Base.swift in Sources */,
 				377B3B6E20B6B1D300BB50C0 /* UIViewController + Base.swift in Sources */,
 				3753ADA320B69B3100612D6B /* PictureCollectionViewCell.swift in Sources */,
 				3788B28920BC07C7005D0637 /* Pictures.swift in Sources */,
 				377B3B5820B6A85F00BB50C0 /* TripViewController.swift in Sources */,
-				377B3B7F20B7E98F00BB50C0 /* PictureSectionCotroller.swift in Sources */,
+				377B3B7F20B7E98F00BB50C0 /* HotelSectionCotroller.swift in Sources */,
 				3753AD9D20B6927900612D6B /* CategoryCollectionViewCell.swift in Sources */,
 				377B3B6920B6AE8C00BB50C0 /* TripCoordinator.swift in Sources */,
 				3788B28720BBF669005D0637 /* HorizontalSectionController.swift in Sources */,

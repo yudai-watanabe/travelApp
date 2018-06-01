@@ -82,8 +82,21 @@ extension HomeViewController: HorizontalSectionControllerDelegate {
         guard let pictureCell = cell else {
             fatalError("can't found picture cell")
         }
-        selectedPictureCellAction?(pictureCell)
+        UIView.animate(withDuration: 0.08, animations: {
+            pictureCell.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
+        }, completion:{[weak self] bool in
+            pictureCell.transform = CGAffineTransform(scaleX: 1, y: 1)
+            self?.selectedPictureCellAction?(pictureCell)
+        })
     }
+}
+
+// MARK: - DestinationViewControllerDelegate
+
+extension HomeViewController: DestinationViewControllerDelegate {
     
+    func dissmiss(_ viewController: DestinationViewController) {
+        viewController.dismiss(animated: true, completion: nil)
+    }
     
 }

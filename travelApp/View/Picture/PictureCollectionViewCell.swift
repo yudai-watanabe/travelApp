@@ -16,11 +16,7 @@ class PictureCollectionViewCell: UICollectionViewCell {
     var picture: Picture? {
         didSet{
             self.title.text = picture?.title
-            if picture?.title == "New York City" {
-                self.animationView.setAnimation(named: "like2")
-            } else {
-                self.animationView.setAnimation(named: "like")
-            }
+            self.animationView.setAnimation(named: "like2")
             self.image.af_setImage(withURL: URL(string: picture!.imageUrl)!)
         }
     }

@@ -28,7 +28,7 @@ extension Picture: ListDiffable {
 
     func isEqual(toDiffableObject object: ListDiffable?) -> Bool {
         if let pictureObj = object as? Picture {
-            return self.imageUrl == pictureObj.title || self.title == pictureObj.title
+            return self.imageUrl == pictureObj.imageUrl || self.title == pictureObj.title
         }
         return false
     }

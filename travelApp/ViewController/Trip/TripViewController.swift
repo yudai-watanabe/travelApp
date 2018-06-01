@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import Lottie
 
 class TripViewController: UIViewController {
 
+    @IBOutlet weak var animationView: LOTAnimationView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        animationView.setAnimation(named: "airplane")
+        animationView.animationSpeed = 0.8
+        animationView.loopAnimation = true
+        animationView.play()
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,13 +18,31 @@
                     <view key="view" contentMode="scaleToFill" id="Gqo-4a-Ujp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j4J-fV-Kfu" customClass="LOTAnimationView">
+                                <rect key="frame" x="0.0" y="216.5" width="375" height="234"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j4J-fV-Kfu" secondAttribute="height" multiplier="16:10" id="L9v-ii-jQa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j4J-fV-Kfu" firstAttribute="centerY" secondItem="Gqo-4a-Ujp" secondAttribute="centerY" id="JuG-Pw-ScW"/>
+                            <constraint firstItem="j4J-fV-Kfu" firstAttribute="centerX" secondItem="Gqo-4a-Ujp" secondAttribute="centerX" id="RoQ-y7-tLc"/>
+                            <constraint firstItem="j4J-fV-Kfu" firstAttribute="leading" secondItem="Kcj-Y4-6Cz" secondAttribute="leading" id="fCZ-St-5hb"/>
+                            <constraint firstItem="j4J-fV-Kfu" firstAttribute="trailing" secondItem="Kcj-Y4-6Cz" secondAttribute="trailing" id="rPD-dE-pqG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Kcj-Y4-6Cz"/>
                     </view>
+                    <connections>
+                        <outlet property="animationView" destination="j4J-fV-Kfu" id="LyR-pf-Liz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ARV-V2-cEn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-49" y="-50"/>
+            <point key="canvasLocation" x="-50.399999999999999" y="-50.824587706146929"/>
         </scene>
     </scenes>
 </document>
