@@ -1,7 +1,6 @@
 # travelApp
 
-## Library
-----
+## Libraries
 * [airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)
 * [Instagram/IGListKit](https://github.com/Instagram/IGListKit)
 * [Alamofire/AlamofireImage](https://github.com/Alamofire/AlamofireImage)
