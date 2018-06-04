@@ -1,7 +1,7 @@
 # travelApp
 
 ## Introduction
-"travelApp" is explore new destination for your trip
+"travelApp" is explore new destination for your trip  
 designed by  Yoshihiro Nakata https://dribbble.com/shots/4087480-Trip-app
 
 ## Libraries
