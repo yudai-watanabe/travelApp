@@ -10,9 +10,17 @@ import Foundation
 import UIKit
 import IGListKit
 
+protocol HotelSectionControllerDelegate: NSObjectProtocol {
+    func selected(_ hotel: Hotel, sectionController: HotelSectionController)
+}
+
 final class HotelSectionController: ListSectionController {
     
     var hotel: Hotel?
+    
+    private var cell: HotelCollectionViewCell?
+    
+    open weak var delegate: HotelSectionControllerDelegate?
     
     override func sizeForItem(at index: Int) -> CGSize {
         super.sizeForItem(at: index)
@@ -22,14 +30,21 @@ final class HotelSectionController: ListSectionController {
     
     override func cellForItem(at index: Int) -> UICollectionViewCell {
         super.cellForItem(at: index)
+        self.cell = collectionContext?.dequeueReusableCell(withNibName: "HotelCollectionViewCell",
+                                                           bundle: nil,
+                                                           for: self, at: index) as? HotelCollectionViewCell
         guard let hotel = hotel,
-            let cell = collectionContext?.dequeueReusableCell(withNibName: "HotelCollectionViewCell",
-                                                              bundle: nil,
-                                                              for: self, at: index) as? HotelCollectionViewCell else{
-                                                                fatalError("category is nil OR HotelCollectionViewCell has can`t founded")
+            let cell = self.cell else{
+            fatalError("category is nil OR HotelCollectionViewCell has can`t founded")
         }
         cell.hotel = hotel
         return cell
     }
     
+    override func didSelectItem(at index: Int) {
+        guard let hotel = self.hotel else{
+            fatalError()
+        }
+        delegate?.selected(hotel, sectionController: self)
+    }
 }

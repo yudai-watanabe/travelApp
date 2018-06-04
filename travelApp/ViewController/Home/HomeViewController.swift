@@ -20,19 +20,29 @@ class HomeViewController: UIViewController {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
     }()
     
+    let pictures: Array<Picture> = [Picture(imageUrl: "https://media.timeout.com/images/102920649/image.jpg",
+                                            title: "New York City"),
+                                    Picture(imageUrl: "https://potovanja.over.net/wp-content/uploads/2017/05/rio.jpg",
+                                            title: "Rio de Janeiro"),
+                                    Picture(imageUrl: "https://pmcvariety.files.wordpress.com/2018/05/rexfeatures_4916713ae.jpg",
+                                            title: "Tokyo")]
+    
     let data: [ListDiffable] = [
         Category(categoryTitle: "Popularity"),
         Pictures("Popularity", pictures: [Picture(imageUrl: "https://media.timeout.com/images/102920649/image.jpg",
                                                   title: "New York City"),
-                                          Picture(imageUrl: "https://potovanja.over.net/wp-content/uploads/2017/05/rio.jpg",
-                                                  title: "Rio de Janeiro")]),
+                                          Picture(imageUrl: "https://farm5.staticflickr.com/4301/35992332716_a8b03bda09_b.jpg",
+                                                  title: "Balcelona"),
+                                          Picture(imageUrl: "https://pmcvariety.files.wordpress.com/2018/05/rexfeatures_4916713ae.jpg",
+                                                  title: "Tokyo")]),
         Category(categoryTitle: "Recommended"),
         Pictures("Recommende",
-                 pictures: [Picture(imageUrl: "https://farm5.staticflickr.com/4301/35992332716_a8b03bda09_b.jpg",
-                                    title: "Balcelona"),
-                            Picture(imageUrl: "https://media.timeout.com/images/102920649/image.jpg",
-                                    title: "New York City")])
-    ]
+                 pictures: [Picture(imageUrl: "https://potovanja.over.net/wp-content/uploads/2017/05/rio.jpg",
+                                    title: "Rio de Janeiro"),
+                            Picture(imageUrl: "https://d3atagt0rnqk7k.cloudfront.net/wp-content/uploads/2017/11/14112200/recreational-marijuana-san-fran-1280x800.jpg",
+                                    title: "San Francisco"),
+                            Picture(imageUrl: "https://malta.intercontinental.com/wp-content/uploads/2016/12/5-reasons-to-turn-on-your-%E2%80%98out-of-office%E2%80%99-and-visit-Malta-1116x580.jpg",
+                                    title: "Malta")])]
     
     override func viewDidLoad() {
         super.viewDidLoad()

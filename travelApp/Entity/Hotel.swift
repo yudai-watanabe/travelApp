@@ -12,15 +12,17 @@ import IGListKit
 class Hotel {
     
     let name: String
+    let url: URL?
     let imageUrl: String
     let description: String
     let review: Int
 
-    init(name: String, imageUrl: String, description: String, review: Int) {
+    init(name: String, imageUrl: String, description: String, review: Int, url: String) {
         self.name = name
         self.imageUrl = imageUrl
         self.description = description
         self.review = review
+        self.url = URL(string: url)
     }
     
 }
