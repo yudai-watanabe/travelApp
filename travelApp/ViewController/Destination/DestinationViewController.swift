@@ -89,6 +89,15 @@ class DestinationViewController: UIViewController {
         return UIStatusBarStyle.lightContent
     }
     
+    
+    @IBAction func didTapShareButton(_ sender: Any) {
+        let images = [imageView.image!]
+        let activityViewController = UIActivityViewController(activityItems: images, applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+        self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    
     @IBAction func didTapBackButton(_ sender: Any) {
         delegate?.DestinationViewController(forDissmissed: self)
     }
