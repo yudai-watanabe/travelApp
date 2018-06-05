@@ -10,7 +10,9 @@ import UIKit
 import IGListKit
 
 protocol EmbeddedSectionControllerDelegate : NSObjectProtocol{
-    func selected(_ cell: PictureCollectionViewCell?)
+    
+    func embeddedSectionController(_ sectionController: EmbeddedSectionController, selected cell: PictureCollectionViewCell)
+    
 }
 
 final class EmbeddedSectionController: ListSectionController {
@@ -51,8 +53,10 @@ final class EmbeddedSectionController: ListSectionController {
     
     
     override func didSelectItem(at index: Int) {
-        super.didSelectItem(at: index)
-        delegate?.selected(cell)
+        guard let cell = self.cell else {
+            fatalError("PictureCollectionViewCell is nil")
+        }
+        delegate?.embeddedSectionController(self, selected: cell)
     }
     
 }

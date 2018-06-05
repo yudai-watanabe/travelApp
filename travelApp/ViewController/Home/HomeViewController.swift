@@ -9,12 +9,16 @@
 import UIKit
 import IGListKit
 
+protocol HomeViewControllerDelegate: class {
+    func homeViewController(_ homeViewController: HomeViewController, didSelect cell: PictureCollectionViewCell)
+}
+
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    open var selectedPictureCellAction: ((PictureCollectionViewCell) -> Void)?
+    weak var delegate: HomeViewControllerDelegate?
     
     private lazy var adapter: ListAdapter = {
         return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
@@ -88,24 +92,25 @@ extension HomeViewController: ListAdapterDataSource {
 
 extension HomeViewController: HorizontalSectionControllerDelegate {
     
-    func selected(_ cell: PictureCollectionViewCell?) {
-        guard let pictureCell = cell else {
-            fatalError("can't found picture cell")
-        }
+    func horizontalSectionController(_ sectionController: HorizontalSectionController, selected pictureCell: PictureCollectionViewCell) {
         UIView.animate(withDuration: 0.08, animations: {
             pictureCell.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
         }, completion:{[weak self] bool in
+            guard let homeViewController = self else {
+                fatalError("homeViewController is nil")
+            }
             pictureCell.transform = CGAffineTransform(scaleX: 1, y: 1)
-            self?.selectedPictureCellAction?(pictureCell)
+            self?.delegate?.homeViewController(homeViewController, didSelect: pictureCell)
         })
     }
+    
 }
 
 // MARK: - DestinationViewControllerDelegate
 
 extension HomeViewController: DestinationViewControllerDelegate {
     
-    func dissmiss(_ viewController: DestinationViewController) {
+    func DestinationViewController(forDissmissed viewController: DestinationViewController) {
         viewController.dismiss(animated: true, completion: nil)
     }
     

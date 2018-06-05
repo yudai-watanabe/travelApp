@@ -22,16 +22,22 @@ class HomeCoordinator: Coordinator {
         self.homeViewController = HomeViewController.instantiateFromStoryBoard() as! HomeViewController
         self.homeViewController.title = title
         self.homeViewController.tabBarItem.image = #imageLiteral(resourceName: "tab_home_active")
-        self.homeViewController.selectedPictureCellAction = {[weak self] cell in
-            let destinationViewController = DestinationViewController.instantiateFromStoryBoard() as! DestinationViewController
-            destinationViewController.modalTransitionStyle = .crossDissolve
-            destinationViewController.picture = cell.picture
-            destinationViewController.delegate = self?.homeViewController
-            presenter.present(destinationViewController, animated: true, completion: nil)
-        }
+        self.homeViewController.delegate = self
     }
     
     func start() {
         presenter.pushViewController(homeViewController, animated: false)
     }
+}
+
+extension HomeCoordinator: HomeViewControllerDelegate {
+    
+    func homeViewController(_ homeViewController: HomeViewController, didSelect cell: PictureCollectionViewCell) {
+        let destinationViewController = DestinationViewController.instantiateFromStoryBoard() as! DestinationViewController
+        destinationViewController.modalTransitionStyle = .crossDissolve
+        destinationViewController.picture = cell.picture
+        destinationViewController.delegate = self.homeViewController
+        presenter.present(destinationViewController, animated: true, completion: nil)
+    }
+    
 }

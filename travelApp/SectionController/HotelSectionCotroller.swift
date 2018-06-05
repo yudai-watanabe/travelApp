@@ -11,7 +11,7 @@ import UIKit
 import IGListKit
 
 protocol HotelSectionControllerDelegate: NSObjectProtocol {
-    func selected(_ hotel: Hotel, sectionController: HotelSectionController)
+    func hotelSectionController(_ hotelSectionController: HotelSectionController, selected hotel: Hotel)
 }
 
 final class HotelSectionController: ListSectionController {
@@ -45,6 +45,6 @@ final class HotelSectionController: ListSectionController {
         guard let hotel = self.hotel else{
             fatalError()
         }
-        delegate?.selected(hotel, sectionController: self)
+        delegate?.hotelSectionController(self, selected: hotel)
     }
 }

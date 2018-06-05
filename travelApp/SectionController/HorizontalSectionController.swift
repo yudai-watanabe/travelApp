@@ -10,7 +10,9 @@ import IGListKit
 import UIKit
 
 protocol HorizontalSectionControllerDelegate: NSObjectProtocol {
-    func selected(_ cell: PictureCollectionViewCell?)
+    
+    func horizontalSectionController(_ sectionController: HorizontalSectionController, selected pictureCell: PictureCollectionViewCell)
+    
 }
 
 final class HorizontalSectionController: ListSectionController {
@@ -74,8 +76,8 @@ extension HorizontalSectionController: ListAdapterDataSource {
 
 extension HorizontalSectionController: EmbeddedSectionControllerDelegate {
     
-    func selected(_ cell: PictureCollectionViewCell?) {
-        delegate?.selected(cell)
+    func embeddedSectionController(_ sectionController: EmbeddedSectionController, selected cell: PictureCollectionViewCell) {
+        delegate?.horizontalSectionController(self, selected: cell)
     }
     
 }

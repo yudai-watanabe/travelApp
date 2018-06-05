@@ -16,7 +16,7 @@ import IGListKit
 import SafariServices
 
 protocol DestinationViewControllerDelegate: NSObjectProtocol {
-    func dissmiss(_ viewController: DestinationViewController)
+    func DestinationViewController(forDissmissed viewController: DestinationViewController)
 }
 
 class DestinationViewController: UIViewController {
@@ -63,15 +63,10 @@ class DestinationViewController: UIViewController {
         if let url: URL = URL(string: picture!.imageUrl) {
             self.imageView.af_setImage(withURL: url)
         }
+        self.addGradientView()
         self.adapter.collectionView = self.collectionView
         self.adapter.dataSource = self
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        self.addGradientView()
-       
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,8 +75,9 @@ class DestinationViewController: UIViewController {
     }
     
     private func addGradientView() {
-        let rect: CGRect = CGRect(x: 0, y: self.imageView.frame.height / 2,
-                                  width: self.imageView.frame.width,
+        let screeeSize: CGSize = UIScreen.main.bounds.size
+        let rect: CGRect = CGRect(x: 0, y: self.imageView.frame.height/2,
+                                  width: screeeSize.width,
                                   height: self.imageView.frame.height/2)
         let gradientView: GradientView = GradientView(frame: rect)
         gradientView.backgroundColor = .clear
@@ -94,7 +90,7 @@ class DestinationViewController: UIViewController {
     }
     
     @IBAction func didTapBackButton(_ sender: Any) {
-        delegate?.dissmiss(self)
+        delegate?.DestinationViewController(forDissmissed: self)
     }
 }
 
@@ -126,14 +122,12 @@ extension DestinationViewController: ListAdapterDataSource {
 
 extension DestinationViewController: HotelSectionControllerDelegate {
     
-    func selected(_ hotel: Hotel, sectionController: HotelSectionController) {
+    func hotelSectionController(_ hotelSectionController: HotelSectionController, selected hotel: Hotel) {
         guard let url = hotel.url else {
             fatalError("can not found a url")
         }
-         let safariVC = SFSafariViewController(url: url)
+        let safariVC = SFSafariViewController(url: url)
         present(safariVC, animated: true, completion: nil)
-        
     }
-    
     
 }
