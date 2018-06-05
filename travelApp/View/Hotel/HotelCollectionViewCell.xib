@@ -13,12 +13,43 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HotelCollectionViewCell" id="gTV-IL-0wX" customClass="HotelCollectionViewCell" customModule="travelApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="475" height="140"/>
+            <rect key="frame" x="0.0" y="0.0" width="597" height="140"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="475" height="140"/>
+                <rect key="frame" x="0.0" y="0.0" width="597" height="140"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7J-b1-1R1">
+                        <rect key="frame" x="108" y="0.0" width="473" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOl-bT-TR3">
+                        <rect key="frame" x="108" y="50" width="473" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-yn-3ba">
+                        <rect key="frame" x="16" y="119" width="565" height="1"/>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="acS-US-prP" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="108" y="24" width="120" height="14"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="5eu-Lr-yqA"/>
+                            <constraint firstAttribute="height" constant="14" id="KJB-M1-ZVs"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="iconStarOn"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="iconStarOff"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5G2-A2-bup">
                         <rect key="frame" x="16" y="0.0" width="76" height="100"/>
                         <constraints>
@@ -31,22 +62,6 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7J-b1-1R1">
-                        <rect key="frame" x="108" y="0.0" width="351" height="18"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOl-bT-TR3">
-                        <rect key="frame" x="108" y="50" width="351" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WnA-yn-3ba">
-                        <rect key="frame" x="16" y="119" width="443" height="1"/>
-                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
-                    </view>
                 </subviews>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,6 +69,7 @@
                 <constraint firstAttribute="bottom" secondItem="5G2-A2-bup" secondAttribute="bottom" constant="40" id="8PR-Wf-zfj"/>
                 <constraint firstItem="D7J-b1-1R1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9Xh-eS-BQL"/>
                 <constraint firstAttribute="bottom" secondItem="WnA-yn-3ba" secondAttribute="bottom" constant="20" id="ANO-vJ-Ik6"/>
+                <constraint firstItem="acS-US-prP" firstAttribute="leading" secondItem="5G2-A2-bup" secondAttribute="trailing" constant="16" id="EvI-wI-Ngj"/>
                 <constraint firstItem="iOl-bT-TR3" firstAttribute="top" secondItem="D7J-b1-1R1" secondAttribute="bottom" constant="32" id="GSX-t3-Tfq"/>
                 <constraint firstItem="WnA-yn-3ba" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="Oal-AO-3kN"/>
                 <constraint firstItem="D7J-b1-1R1" firstAttribute="leading" secondItem="5G2-A2-bup" secondAttribute="trailing" constant="16" id="QeD-kO-pkV"/>
@@ -61,18 +77,24 @@
                 <constraint firstAttribute="trailing" secondItem="WnA-yn-3ba" secondAttribute="trailing" constant="16" id="Zpb-7h-q6M"/>
                 <constraint firstAttribute="trailing" secondItem="D7J-b1-1R1" secondAttribute="trailing" constant="16" id="b5s-6J-7as"/>
                 <constraint firstItem="5G2-A2-bup" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="gFb-iN-Czf"/>
+                <constraint firstItem="acS-US-prP" firstAttribute="top" secondItem="D7J-b1-1R1" secondAttribute="bottom" constant="6" id="gzI-RW-k9K"/>
                 <constraint firstItem="5G2-A2-bup" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hXX-RN-R0D"/>
                 <constraint firstItem="iOl-bT-TR3" firstAttribute="leading" secondItem="5G2-A2-bup" secondAttribute="trailing" constant="16" id="t2g-kG-rkX"/>
                 <constraint firstAttribute="trailing" secondItem="iOl-bT-TR3" secondAttribute="trailing" constant="16" id="uvS-kA-GGJ"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="475" height="161"/>
+            <size key="customSize" width="597" height="161"/>
             <connections>
                 <outlet property="descriptionlabel" destination="iOl-bT-TR3" id="bva-FE-AMV"/>
                 <outlet property="image" destination="5G2-A2-bup" id="i7Y-9e-Vr0"/>
                 <outlet property="name" destination="D7J-b1-1R1" id="BmS-Hx-3Hv"/>
+                <outlet property="ratingView" destination="acS-US-prP" id="0YI-6Z-eb8"/>
             </connections>
-            <point key="canvasLocation" x="120.5" y="43"/>
+            <point key="canvasLocation" x="120" y="43"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="iconStarOff" width="13" height="13"/>
+        <image name="iconStarOn" width="13" height="13"/>
+    </resources>
 </document>

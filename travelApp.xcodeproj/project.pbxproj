@@ -51,6 +51,7 @@
 		377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */; };
 		377B3B8720B7F6BD00BB50C0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */; };
 		377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */; };
+		377B71E220C638E50003D8F1 /* Cosmos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377B71E120C638E50003D8F1 /* Cosmos.framework */; };
 		3788B27E20BB9733005D0637 /* UIView + cornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B27D20BB9733005D0637 /* UIView + cornerRadius.swift */; };
 		3788B28220BBD82C005D0637 /* EmbeddedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28120BBD82C005D0637 /* EmbeddedCollectionViewCell.swift */; };
 		3788B28420BBF32B005D0637 /* EmbeddedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */; };
@@ -129,6 +130,7 @@
 		377B3B8420B7F6BD00BB50C0 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		377B3B8520B7F6BD00BB50C0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		377B3B8820B7F79600BB50C0 /* BulletinBoard.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BulletinBoard.framework; path = Carthage/Build/iOS/BulletinBoard.framework; sourceTree = "<group>"; };
+		377B71E120C638E50003D8F1 /* Cosmos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cosmos.framework; path = Carthage/Build/iOS/Cosmos.framework; sourceTree = "<group>"; };
 		3788B27D20BB9733005D0637 /* UIView + cornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + cornerRadius.swift"; sourceTree = "<group>"; };
 		3788B28120BBD82C005D0637 /* EmbeddedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedCollectionViewCell.swift; sourceTree = "<group>"; };
 		3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedSectionController.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				377B71E220C638E50003D8F1 /* Cosmos.framework in Frameworks */,
 				377AD5A820BFDEBE00C210F8 /* GradientView.framework in Frameworks */,
 				377B3B8920B7F79600BB50C0 /* BulletinBoard.framework in Frameworks */,
 				377B3B8620B7F6BD00BB50C0 /* AlamofireImage.framework in Frameworks */,
@@ -348,6 +351,7 @@
 		377B3B7120B7A88B00BB50C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				377B71E120C638E50003D8F1 /* Cosmos.framework */,
 				377AD5A720BFDEBE00C210F8 /* GradientView.framework */,
 				377AD5A520BFDEAD00C210F8 /* Carthage */,
 				377AD59A20BE4C3B00C210F8 /* ESTabBarController.framework */,
@@ -542,6 +546,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/BulletinBoard.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/GradientView.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Cosmos.framework",
 			);
 			outputPaths = (
 			);

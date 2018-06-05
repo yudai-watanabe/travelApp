@@ -63,10 +63,15 @@ class DestinationViewController: UIViewController {
         if let url: URL = URL(string: picture!.imageUrl) {
             self.imageView.af_setImage(withURL: url)
         }
-        self.addGradientView()
         self.adapter.collectionView = self.collectionView
         self.adapter.dataSource = self
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        self.addGradientView()
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,13 +80,12 @@ class DestinationViewController: UIViewController {
     }
     
     private func addGradientView() {
-        let rect: CGRect = CGRect(x: 0, y: imageBaseView.frame.height / 2,
-                                  width: imageBaseView.frame.width,
-                                  height: imageBaseView.frame.height/2)
+        let rect: CGRect = CGRect(x: 0, y: self.imageView.frame.height / 2,
+                                  width: self.imageView.frame.width,
+                                  height: self.imageView.frame.height/2)
         let gradientView: GradientView = GradientView(frame: rect)
         gradientView.backgroundColor = .clear
         gradientView.colors = [.clear, .white]
-        gradientView.direction = .vertical
         self.imageView.addSubview(gradientView)
     }
     
