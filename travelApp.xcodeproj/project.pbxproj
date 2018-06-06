@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3721957220C7B9D0007B3902 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721957120C7B9D0007B3902 /* LoginViewController.swift */; };
+		3721957420C7B9F2007B3902 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3721957320C7B9F2007B3902 /* LoginViewController.storyboard */; };
+		3721957620C7BECB007B3902 /* PictureSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3721957520C7BECB007B3902 /* PictureSectionController.swift */; };
 		3753AD6D20B56F5400612D6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753AD6C20B56F5400612D6B /* AppDelegate.swift */; };
 		3753AD6F20B56F5400612D6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3753AD6E20B56F5400612D6B /* ViewController.swift */; };
 		3753AD7220B56F5400612D6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3753AD7020B56F5400612D6B /* Main.storyboard */; };
@@ -77,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3721957120C7B9D0007B3902 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3721957320C7B9F2007B3902 /* LoginViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewController.storyboard; sourceTree = "<group>"; };
+		3721957520C7BECB007B3902 /* PictureSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSectionController.swift; sourceTree = "<group>"; };
 		3753AD6920B56F5400612D6B /* travelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = travelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3753AD6C20B56F5400612D6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3753AD6E20B56F5400612D6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +176,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3721957020C7B9AD007B3902 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3721957120C7B9D0007B3902 /* LoginViewController.swift */,
+				3721957320C7B9F2007B3902 /* LoginViewController.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		3753AD6020B56F5400612D6B = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +276,7 @@
 		3753ADA620B6A26F00612D6B /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3721957020C7B9AD007B3902 /* Login */,
 				377AD59C20BE558F00C210F8 /* Destination */,
 				3753ADAB20B6A4B300612D6B /* Home */,
 				377B3B5620B6A84D00BB50C0 /* Trip */,
@@ -383,6 +399,7 @@
 				377B3B7E20B7E98F00BB50C0 /* HotelSectionCotroller.swift */,
 				3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */,
 				3788B28620BBF669005D0637 /* HorizontalSectionController.swift */,
+				3721957520C7BECB007B3902 /* PictureSectionController.swift */,
 			);
 			path = SectionController;
 			sourceTree = "<group>";
@@ -512,6 +529,7 @@
 				3753ADA420B69B3100612D6B /* PictureCollectionViewCell.xib in Resources */,
 				3753AD7220B56F5400612D6B /* Main.storyboard in Resources */,
 				377AD59720BD23F300C210F8 /* heart.json in Resources */,
+				3721957420C7B9F2007B3902 /* LoginViewController.storyboard in Resources */,
 				377B3B5A20B6A8B000BB50C0 /* TripViewController.storyboard in Resources */,
 				376C799520C11E8D00558E93 /* airplane.json in Resources */,
 			);
@@ -561,11 +579,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3721957220C7B9D0007B3902 /* LoginViewController.swift in Sources */,
 				3753ADA820B6A40B00612D6B /* HomeViewController.swift in Sources */,
 				377B3B7D20B7B0E600BB50C0 /* CategorySectionController.swift in Sources */,
 				377B3B6B20B6AE9F00BB50C0 /* MyPageCoordinator.swift in Sources */,
 				376C799320C0F3F000558E93 /* Hotel.swift in Sources */,
 				3753AD6F20B56F5400612D6B /* ViewController.swift in Sources */,
+				3721957620C7BECB007B3902 /* PictureSectionController.swift in Sources */,
 				377B3B5C20B6A8D400BB50C0 /* MyPageViewController.swift in Sources */,
 				377AD5A420BE834500C210F8 /* UIView + Gradation.swift in Sources */,
 				3788B28420BBF32B005D0637 /* EmbeddedSectionController.swift in Sources */,

@@ -24,22 +24,22 @@ class ApplicationCoordinator: Coordinator {
     
     init(window: UIWindow) {
         self.window = window
-        let viewControllers: Array<UINavigationController> = [homeNavigationController,
+        self.homeCoordinator = HomeCoordinator(presenter: homeNavigationController)
+        self.tripCoordinator = TripCoordinator(presenter: tripNavigationController)
+        self.myPageCoordinator = MyPageCoordinator(presenter: myPageNavigationController)
+        let viewControllers: [UINavigationController] = [homeNavigationController,
                                                               tripNavigationController,
                                                               myPageNavigationController]
         self.rootViewController.setViewControllers(viewControllers, animated: false)
         self.rootViewController.tabBar.tintColor = .black
-        self.homeCoordinator = HomeCoordinator(presenter: homeNavigationController)
-        self.tripCoordinator = TripCoordinator(presenter: tripNavigationController) 
-        self.myPageCoordinator = MyPageCoordinator(presenter: myPageNavigationController)
     }
     
     func start() {
         window.rootViewController = rootViewController
+        window.makeKeyAndVisible()
         homeCoordinator.start()
         tripCoordinator.start()
         myPageCoordinator.start()
-        window.makeKeyAndVisible()
     }
     
 }

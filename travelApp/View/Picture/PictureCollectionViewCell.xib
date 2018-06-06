@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,9 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="210" height="290"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TOu-Gi-nal" userLabel="image">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TOu-Gi-nal" userLabel="image">
                         <rect key="frame" x="0.0" y="0.0" width="210" height="290"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <viewLayoutGuide key="safeArea" id="RaZ-Ge-hN0"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -49,8 +47,12 @@
             </view>
             <constraints>
                 <constraint firstItem="zsv-hu-k3E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="1ue-7j-lgm"/>
+                <constraint firstAttribute="trailing" secondItem="TOu-Gi-nal" secondAttribute="trailing" id="J2a-iB-Zb6"/>
                 <constraint firstAttribute="trailing" secondItem="aZL-aD-Nqg" secondAttribute="trailing" id="Rw8-u9-YZN"/>
+                <constraint firstItem="TOu-Gi-nal" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ves-UL-eGZ"/>
                 <constraint firstAttribute="bottom" secondItem="zsv-hu-k3E" secondAttribute="bottom" constant="14" id="XOk-xl-pst"/>
+                <constraint firstItem="TOu-Gi-nal" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="flx-PB-cJk"/>
+                <constraint firstAttribute="bottom" secondItem="TOu-Gi-nal" secondAttribute="bottom" id="pcy-2t-80W"/>
                 <constraint firstItem="aZL-aD-Nqg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wQo-G7-jsB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>

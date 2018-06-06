@@ -85,7 +85,6 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="3Bk-6d-sWC" firstAttribute="leading" secondItem="mry-Xy-mts" secondAttribute="leading" constant="16" id="Ckv-io-dsg"/>
                                             <constraint firstItem="3Bk-6d-sWC" firstAttribute="top" secondItem="mry-Xy-mts" secondAttribute="top" constant="2" id="RRV-c0-s2G"/>
@@ -120,6 +119,7 @@
                         <outlet property="collectionView" destination="5Bx-Mt-K0g" id="mXo-zP-LSx"/>
                         <outlet property="imageBaseView" destination="n9G-X2-RXM" id="gT4-i7-rKT"/>
                         <outlet property="imageView" destination="Boe-zF-aaM" id="cmf-a9-9zy"/>
+                        <outlet property="middleGradientView" destination="mry-Xy-mts" id="IfG-rA-HXp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aru-fz-zOM" userLabel="First Responder" sceneMemberID="firstResponder"/>

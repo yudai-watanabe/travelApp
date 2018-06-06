@@ -18,6 +18,7 @@ class PictureCollectionViewCell: UICollectionViewCell {
             self.title.text = picture?.title
             self.animationView.setAnimation(named: "like2")
             self.image.af_setImage(withURL: URL(string: picture!.imageUrl)!)
+            self.makeShadow()
         }
     }
     
@@ -31,6 +32,10 @@ class PictureCollectionViewCell: UICollectionViewCell {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tap))
         self.animationView.addGestureRecognizer(tapGesture)
         
+        
+    }
+    
+    private func makeShadow() {
         self.layer.masksToBounds = false
         self.layer.shadowColor = UIColor.lightGray.cgColor
         self.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
