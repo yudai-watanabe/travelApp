@@ -93,14 +93,8 @@ extension HomeViewController: ListAdapterDataSource {
 extension HomeViewController: HorizontalSectionControllerDelegate {
     
     func horizontalSectionController(_ sectionController: HorizontalSectionController, selected pictureCell: PictureCollectionViewCell) {
-        UIView.animate(withDuration: 0.08, animations: {
-            pictureCell.transform = CGAffineTransform(scaleX: 0.95, y: 0.95)
-        }, completion:{[weak self] bool in
-            guard let homeViewController = self else {
-                fatalError("homeViewController is nil")
-            }
-            pictureCell.transform = CGAffineTransform(scaleX: 1, y: 1)
-            self?.delegate?.homeViewController(homeViewController, didSelect: pictureCell)
+        pictureCell.bounce(completion: {
+            self.delegate?.homeViewController(self, didSelect: pictureCell)
         })
     }
     

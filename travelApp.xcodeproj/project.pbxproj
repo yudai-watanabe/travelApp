@@ -60,6 +60,7 @@
 		3788B28420BBF32B005D0637 /* EmbeddedSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */; };
 		3788B28720BBF669005D0637 /* HorizontalSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28620BBF669005D0637 /* HorizontalSectionController.swift */; };
 		3788B28920BC07C7005D0637 /* Pictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3788B28820BC07C7005D0637 /* Pictures.swift */; };
+		37F0455520C8E00400DF08ED /* UICollectionViewCell + Bounce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F0455420C8E00400DF08ED /* UICollectionViewCell + Bounce.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		3788B28320BBF32B005D0637 /* EmbeddedSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedSectionController.swift; sourceTree = "<group>"; };
 		3788B28620BBF669005D0637 /* HorizontalSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalSectionController.swift; sourceTree = "<group>"; };
 		3788B28820BC07C7005D0637 /* Pictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pictures.swift; sourceTree = "<group>"; };
+		37F0455420C8E00400DF08ED /* UICollectionViewCell + Bounce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell + Bounce.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -360,6 +362,7 @@
 				377B3B6F20B6B2CC00BB50C0 /* NSObject + Base.swift */,
 				3788B27D20BB9733005D0637 /* UIView + cornerRadius.swift */,
 				377AD5A320BE834500C210F8 /* UIView + Gradation.swift */,
+				37F0455420C8E00400DF08ED /* UICollectionViewCell + Bounce.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				3753ADA820B6A40B00612D6B /* HomeViewController.swift in Sources */,
 				377B3B7D20B7B0E600BB50C0 /* CategorySectionController.swift in Sources */,
 				377B3B6B20B6AE9F00BB50C0 /* MyPageCoordinator.swift in Sources */,
+				37F0455520C8E00400DF08ED /* UICollectionViewCell + Bounce.swift in Sources */,
 				376C799320C0F3F000558E93 /* Hotel.swift in Sources */,
 				3753AD6F20B56F5400612D6B /* ViewController.swift in Sources */,
 				3721957620C7BECB007B3902 /* PictureSectionController.swift in Sources */,

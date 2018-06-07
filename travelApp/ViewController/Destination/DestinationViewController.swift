@@ -69,15 +69,6 @@ class DestinationViewController: UIViewController {
         self.addGradientView()
         self.adapter.collectionView = self.collectionView
         self.adapter.dataSource = self
-        let rect: CGRect = CGRect(x: self.screeeSize.width/2 - 60, y: self.screeeSize.height - (76), width: 120, height: 36)
-        let filterButtton: UIButton = UIButton(frame: rect)
-        filterButtton.backgroundColor = .white
-        filterButtton.setTitle("filter", for: .normal)
-//        filterButtton.titleEdgeInsets = UIEdgeInsets(
-        filterButtton.setTitleColor(.black, for: .normal)
-        filterButtton.cornerRadius = 18
-        self.view.addSubview(filterButtton)
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
