@@ -5,7 +5,7 @@ Explore new destination for your trip✈️ てきな
 
 ## Libraries
 * [airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)  
-HomeViewController : Heart animation
+HomeViewController : Heart animation  
 TripViewController :  Heart Animation
 * [Instagram/IGListKit](https://github.com/Instagram/IGListKit)  
 HomeViewController : Destinations List  
