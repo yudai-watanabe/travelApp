@@ -1,7 +1,7 @@
 # travelApp
 
 ## Introduction
-"travelApp" is explore new destination for your trip✈️  
+Explore new destination for your trip✈️ てきな  
 
 ## Libraries
 * [airbnb/lottie-ios](https://github.com/airbnb/lottie-ios)  
