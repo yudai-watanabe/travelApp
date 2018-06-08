@@ -9,6 +9,10 @@
 import UIKit
 import IGListKit
 
+protocol PictureSectionControllerDelegate: NSObjectProtocol {
+    func pictureSectionController(_ sectionController: PictureSectionController, selected cell: PictureCollectionViewCell)
+}
+
 final class PictureSectionController: ListSectionController {
     
     private var picture: Pictures?
@@ -17,10 +21,13 @@ final class PictureSectionController: ListSectionController {
     
     private let screeeSize: CGSize = UIScreen.main.bounds.size
     
+    weak var delegate: PictureSectionControllerDelegate?
+    
     override init() {
         super.init()
         self.minimumInteritemSpacing = 3
         self.minimumLineSpacing = 3
+        self.inset = UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3)
     }
     
     override func numberOfItems() -> Int {
@@ -50,6 +57,12 @@ final class PictureSectionController: ListSectionController {
     }
     
     override func didSelectItem(at index: Int) {
-        cells[index]?.bounce(completion: nil)
+        guard let cell = cells[index] else {
+            fatalError()
+        }
+        
+        cell.bounce(completion: {
+            self.delegate?.pictureSectionController(self, selected: cell)
+        })
     }
 }

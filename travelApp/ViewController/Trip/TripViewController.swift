@@ -9,7 +9,13 @@
 import UIKit
 import IGListKit
 
+protocol TripViewControllerDelegate: class {
+    func tripViewControllerDelegate(_ viewController: TripViewController, selected cell: PictureCollectionViewCell)
+}
+
 class TripViewController: UIViewController {
+    
+    weak var delegate: TripViewControllerDelegate?
     
     let data: Array<ListDiffable> = [
         Pictures("trip", pictures: [
@@ -55,8 +61,9 @@ class TripViewController: UIViewController {
     }
 
     override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.navigationItem.largeTitleDisplayMode = .always
+        self.navigationItem.largeTitleDisplayMode = .automatic
     }
 }
 
@@ -68,13 +75,30 @@ extension TripViewController: ListAdapterDataSource {
     
     func listAdapter(_ listAdapter: ListAdapter, sectionControllerFor object: Any) -> ListSectionController {
         switch object {
-        case is Pictures: return PictureSectionController()
+        case is Pictures:
+            let pictureSectionController = PictureSectionController()
+            pictureSectionController.delegate = self
+            return pictureSectionController
         default: fatalError()
         }
     }
     
     func emptyView(for listAdapter: ListAdapter) -> UIView? {
         return nil
+    }
+    
+}
+
+extension TripViewController: PictureSectionControllerDelegate {
+    func pictureSectionController(_ sectionController: PictureSectionController, selected cell: PictureCollectionViewCell) {
+        delegate?.tripViewControllerDelegate(self, selected: cell)
+    }
+}
+
+extension TripViewController: DestinationViewControllerDelegate {
+    
+    func DestinationViewController(forDissmissed viewController: DestinationViewController) {
+        self.navigationController?.popViewController(animated: true)
     }
     
 }

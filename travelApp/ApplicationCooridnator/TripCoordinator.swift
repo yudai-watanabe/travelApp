@@ -22,9 +22,24 @@ class TripCoordinator: Coordinator {
         self.tripViewController = TripViewController.instantiateFromStoryBoard() as! TripViewController
         self.tripViewController.title = title
         self.tripViewController.tabBarItem.image = #imageLiteral(resourceName: "tab_plan")
+        self.tripViewController.delegate = self
     }
     
     func start() {
         presenter.pushViewController(tripViewController, animated: false)
     }
+}
+
+extension TripCoordinator: TripViewControllerDelegate {
+    
+    func tripViewControllerDelegate(_ viewController: TripViewController, selected cell: PictureCollectionViewCell) {
+        guard let  picture = cell.picture else{
+            fatalError()
+        }
+        let destinationViewController = DestinationViewController.instantiateFromStoryBoard() as! DestinationViewController
+        destinationViewController.picture = picture
+        destinationViewController.delegate = self.tripViewController
+        self.presenter.pushViewController(destinationViewController, animated: true)
+    }
+
 }

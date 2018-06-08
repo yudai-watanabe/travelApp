@@ -90,6 +90,10 @@ class DestinationViewController: UIViewController {
         return UIStatusBarStyle.lightContent
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
     
     @IBAction func didTapShareButton(_ sender: Any) {
         let images = [imageView.image!]
