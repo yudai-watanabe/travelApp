@@ -69,6 +69,7 @@ class DestinationViewController: UIViewController {
         self.addGradientView()
         self.adapter.collectionView = self.collectionView
         self.adapter.dataSource = self
+        self.addFilterButton()
     }
 
     override func didReceiveMemoryWarning() {
@@ -84,6 +85,23 @@ class DestinationViewController: UIViewController {
         gradientView.backgroundColor = .clear
         gradientView.colors = [.clear, .white]
         self.imageView.addSubview(gradientView)
+    }
+    
+    private func addFilterButton() {
+        let rect: CGRect = CGRect(x: self.screeeSize.width/2 - 60, y: self.screeeSize.height - (76), width: 120, height: 36)
+        let filterButtton: UIButton = UIButton(frame: rect)
+        filterButtton.backgroundColor = .white
+        filterButtton.setTitle("filter", for: .normal)
+        filterButtton.setTitleColor(.black, for: .normal)
+        filterButtton.cornerRadius = 18
+        filterButtton.layer.masksToBounds = false
+        filterButtton.layer.shadowColor = UIColor.lightGray.cgColor
+        filterButtton.layer.shadowOffset = CGSize(width: 5.0, height: 5.0)
+        filterButtton.layer.shadowOpacity = 2.0
+        filterButtton.layer.shadowRadius = 5.0
+        filterButtton.layer.shadowPath = UIBezierPath(roundedRect: filterButtton.bounds,
+                                                      cornerRadius: filterButtton.layer.cornerRadius).cgPath
+        self.view.addSubview(filterButtton)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
